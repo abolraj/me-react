@@ -17,6 +17,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
