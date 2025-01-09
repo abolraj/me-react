@@ -12,7 +12,7 @@ export default function Information({ ...props }) {
                             <img src={devImg} alt="Developer Image" class="img-fluid h-full" />
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2 px-4">
+                    <div class="w-full md:w-1/2">
                         <div class="about-inner text-base-content text-left">
                             <h2 class="text-4xl font-bold mb-4 " data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                                 About Me &nbsp;
