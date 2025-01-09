@@ -4,7 +4,7 @@ export default function Navigation({ ...props }) {
     return (
         <>
             <div class="">
-                <nav class="dropdown lg:aspect-square max-lg:float-left  bg-base-100 rounded-box">
+                <nav class="dropdown max-lg:aspect-square max-lg:float-left  bg-base-100 rounded-box">
                     <button tabIndex="0" role="button" className="btn lg:hidden rounded-box">
                         <FontAwesomeIcon icon={faBars}/>
                     </button>
