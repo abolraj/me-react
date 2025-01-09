@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev-abroad": "vite --host=192.168.1.4 --port=80",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
