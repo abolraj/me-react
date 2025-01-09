@@ -62,9 +62,9 @@ export default function Hero({ ...props }) {
                                 </ul>
                             </div>
                         </div>
-                        <div className="grow md:grow-0 w-60 md:w-80 flex flex-col items-center">
+                        <div className="grow md:grow-0 w-60 md:w-80 flex flex-col items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                             <div className="rounded-full p-2 bg-gradient-to-tr from-[#fc466b] to-[#3f5efb] w-full">
-                                <div class="rounded-full overflow-hidden bg-base-300  " data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                                <div class="rounded-full overflow-hidden bg-base-300  ">
                                     <img src={heroImg} alt="" class="w-full h-full object-cover" />
                                 </div>
                             </div>
