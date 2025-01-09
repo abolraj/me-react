@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import heroImg from "@assets/hero.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faMapMarker, faPhone } from "@fortawesome/free-solid-svg-icons"
+import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin, faTelegram } from "@fortawesome/fontawesome-free-brands"
 
 export default function Hero({ ...props }) {
@@ -31,7 +31,7 @@ export default function Hero({ ...props }) {
                                         <a href="tel:+989045426387" class="link-info text-base-content">+98 904 542 6387</a>
                                     </li>
                                     <li class="group flex items-center space-x-3 " data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                                        <FontAwesomeIcon icon={faMapMarker} className="group-hover:text-info" />
+                                        <FontAwesomeIcon icon={faLocationDot} className="group-hover:text-info" />
                                         <address>
                                             <a href="https://www.google.com/maps?q=Mashhad,Iran" class="link-info text-base-content">Mashhad, Razavi Khorasan, Iran</a>
                                         </address>
