@@ -1,4 +1,4 @@
-import Navigation from "./Navigation";
+import Navigation from "../components/Navigation";
 
 export default function Header({ ...props }) {
     return (
