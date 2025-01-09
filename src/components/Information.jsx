@@ -7,14 +7,14 @@ export default function Information({ ...props }) {
         <section class="about mt-24" id="about">
             <div class="container mx-auto">
                 <div class="row flex flex-wrap overflow-hidden">
-                    <div class="w-full md:w-1/2">
-                        <div class="about-img w-96" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                    <div class="w-full box-border md:w-1/2">
+                        <div class="about-img max-w-96  max-md:mx-auto" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
                             <img src={devImg} alt="Developer Image" class="img-fluid h-full" />
                         </div>
                     </div>
-                    <div class="w-full md:w-1/2">
+                    <div class="w-full box-border md:w-1/2">
                         <div class="about-inner text-base-content text-left">
-                            <h2 class="text-4xl font-bold mb-4 " data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                            <h2 class="text-4xl font-bold mb-4" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                                 About Me &nbsp;
                                 <FontAwesomeIcon icon={faInfoCircle}/>
                             </h2>
@@ -37,7 +37,7 @@ export default function Information({ ...props }) {
                                 <span class="badge badge-primary badge-outline p-4">JavaScript</span>
                             </div>
                             <a href="resume.pdf">
-                                <button className="btn btn-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                                <button className="btn btn-primary w-full md:w-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                                     Download CV
                                     <FontAwesomeIcon icon={faDownload} />
                                 </button>
