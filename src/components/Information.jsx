@@ -8,7 +8,7 @@ export default function Information({ ...props }) {
             <div class="container mx-auto">
                 <div class="row flex flex-wrap overflow-hidden">
                     <div class="w-full md:w-1/2 px-4">
-                        <div class="about-img shadow-lg w-96" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                        <div class="about-img w-96" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
                             <img src={devImg} alt="Developer Image" class="img-fluid h-full" />
                         </div>
                     </div>
