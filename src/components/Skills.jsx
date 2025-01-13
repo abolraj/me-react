@@ -41,11 +41,9 @@ export default function Skills({ ...props }) {
                         const value = parseInt(window.getComputedStyle(el).getPropertyValue('--dest-value'))
                         let preValue = 0
                         el.style.setProperty('--value', 0)
-                        const progressStepValue = value/progressAnimSteps
-                        const intervalId = setInterval(()=>{
+                        const progressStepValue = value / progressAnimSteps
+                        const intervalId = setInterval(() => {
                             preValue += progressStepValue
-                            console.log("value",value,el)
-
                             el.style.setProperty('--value', preValue)
                         }, progressStepDuration)
                         setTimeout(() => {
