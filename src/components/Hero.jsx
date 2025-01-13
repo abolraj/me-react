@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import heroImg from "@assets/hero.png"
+import heroImg from "@assets/hero.webp"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin, faTelegram } from "@fortawesome/fontawesome-free-brands"
@@ -65,7 +65,7 @@ export default function Hero({ ...props }) {
                         <div className="grow md:grow-0 w-60 md:w-80 flex flex-col items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                             <div className="rounded-full p-2 bg-gradient-to-tr from-[#fc466b] to-[#3f5efb] w-full">
                                 <div class="rounded-full overflow-hidden bg-base-300  ">
-                                    <img src={heroImg} alt="" class="w-full h-full object-cover" />
+                                    <img src={heroImg} loading="lazy" alt="" class="w-full h-full object-cover" />
                                 </div>
                             </div>
                             <div className="rating">

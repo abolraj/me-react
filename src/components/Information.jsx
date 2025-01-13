@@ -1,4 +1,4 @@
-import devImg from '@assets/patrik.png'
+import devImg from '@assets/patrik.webp'
 import { faLaravel, faPhp } from '@fortawesome/fontawesome-free-brands'
 import { faDownload, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -9,7 +9,7 @@ export default function Information({ ...props }) {
                 <div class="row flex flex-wrap overflow-hidden">
                     <div class="w-full box-border md:w-1/2">
                         <div class="about-img max-w-96  max-md:mx-auto" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
-                            <img src={devImg} alt="Developer Image" class="img-fluid h-full" />
+                            <img src={devImg} loading="lazy" alt="Developer Image" class="img-fluid h-full" />
                         </div>
                     </div>
                     <div class="w-full box-border md:w-1/2">
