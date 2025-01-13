@@ -1,0 +1,25 @@
+@keyframes progressbar-anim {
+    from {width: 0;}
+}
+
+[data-aos="progress-fade-up"] {
+    opacity: 0;
+    transform: translateY(20px);
+    transition-property: opacity, transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out;
+}
+
+[data-aos="progress-fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+[data-aos="progress-fade-up"].aos-animate .progress-bar {
+    animation: progressbar-anim 3000ms ease-in-out;
+}
+/* 
+#skills :has([data-aos="progress-fade-up"].aos-animate) .radial-progress {
+    --value : --radial-value;
+    animation: radial-progressbar-anim 3000ms ease-in-out;
+} */
