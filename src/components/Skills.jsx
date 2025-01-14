@@ -58,7 +58,7 @@ export default function Skills({ ...props }) {
 
     return (
         <section id="skills" className="py-12 text-base-content">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto sm:px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold">
                         Skills</h2>
@@ -68,7 +68,7 @@ export default function Skills({ ...props }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
                         <div className="space-y-8">
-                            <div data-aos="progress-fade-up" data-aos-duration="800" data-aos-delay="300" className="p-6 rounded-lg" >
+                            <div data-aos="progress-fade-up" data-aos-duration="800" data-aos-delay="300" className="sm:p-6 rounded-lg" >
                                 <h3 className="border-b-2 border-base-content text-2xl font-semibold mb-4">
                                     Technical Skills</h3>
                                 <div className="space-y-6">
@@ -91,7 +91,7 @@ export default function Skills({ ...props }) {
                         </div>
                     </div>
                     <div>
-                        <div data-aos="radial-progress-fade-up" data-aos-duration="800" data-aos-delay="500" className="p-6 rounded-lg" >
+                        <div data-aos="radial-progress-fade-up" data-aos-duration="800" data-aos-delay="500" className="sm:p-6 rounded-lg" >
                             <h3 className="border-b-2 border-base-content text-2xl font-semibold mb-4">
                                 Professional Skills</h3>
                             <ul className="grid sm:grid-cols-2 gap-4">
