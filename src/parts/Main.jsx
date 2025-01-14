@@ -1,3 +1,4 @@
+import Experiences from "../components/Experiences";
 import Hero from "../components/Hero";
 import Information from "../components/Information";
 import Services from "../components/Services";
@@ -10,6 +11,7 @@ export default function Main({...props}){
             <Information></Information>
             <Services></Services>
             <Skills></Skills>
+            <Experiences></Experiences>
         </main>
     )
 }
