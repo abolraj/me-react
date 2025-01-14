@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import Information from "../components/Information";
 import Services from "../components/Services";
 import Skills from "../components/Skills";
+import Certifications from "../components/Certifications";
 
 export default function Main({...props}){
     return (
@@ -12,6 +13,7 @@ export default function Main({...props}){
             <Services></Services>
             <Skills></Skills>
             <Experiences></Experiences>
+            <Certifications></Certifications>
         </main>
     )
 }
