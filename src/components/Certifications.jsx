@@ -80,7 +80,7 @@ export default function Certifications({ ...props }) {
     const isotope = useRef();
 
     useEffect(() => {
-        isotope.current = new Isotope('.portfolioContainer', {
+        isotope.current = new Isotope('.certificationContainer', {
             itemSelector: '.grid-item',
             layoutMode: 'fitRows',
         });
@@ -105,7 +105,7 @@ export default function Certifications({ ...props }) {
         <section id="certifications" className="py-12">
             <div className="container mx-auto px-4 text-base-content">
                 <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <h3 className="text-3xl font-extrabold">Certifications</h3>
+                    <h3 className="text-3xl md:text-5xl font-extrabold">Certifications</h3>
                 </div>
                 <div className="flex justify-center mb-6">
                     <ul className="flex gap-2 flex-wrap">
@@ -126,7 +126,7 @@ export default function Certifications({ ...props }) {
                 </div>
                 <div
                     id="project-gallery"
-                    className="portfolioContainer grid gap-0"
+                    className="certificationContainer grid gap-0"
                     data-aos="fade-up"
                     data-aos-duration="800"
                     data-aos-delay="500"
