@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import devImg from '@assets/patrik.webp';
 import { faAt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTelegram, faWhatsapp } from '@fortawesome/fontawesome-free-brands';
 
 export default function Contact() {
     const form = useRef();
@@ -29,6 +30,23 @@ export default function Contact() {
                 <div className="grid md:grid-cols-2 gap-8 py-8 px-6">
                     <div className="text-center flex flex-col items-center justify-center">
                         <img src={devImg} alt="Contact" className="shrink-0 aspect-[250/196] object-contain" />
+                        <div className="contacts flex flex-wrap gap-3 pt-10">
+                            <a href="https://t.me/abol_web">
+                                <FontAwesomeIcon icon={faTelegram} className="h-12 text-blue-700" />
+                            </a>
+                            <a href="https://www.linkedin.com/in/abolfazl-rajaee-nasab-195aa3225/">
+                                <FontAwesomeIcon icon={faLinkedin} className="h-12 text-cyan-500" />
+                            </a>
+                            <a href="https://wa.me/+989045426387">
+                                <FontAwesomeIcon icon={faWhatsapp} className="h-12 text-green-600" />
+                            </a>
+                            <a href="mailto:fazlabol18@gmail.com">
+                                <FontAwesomeIcon icon={faAt} className="h-12 text-red-500" />
+                            </a>
+                            <a href="https://github.com/abolraj">
+                                <FontAwesomeIcon icon={faGithub} className="h-12 text-white" />
+                            </a>
+                        </div>
                     </div>
 
                     <form ref={form} onSubmit={sendEmail} className="rounded-tl-3xl rounded-bl-3xl max-md:-order-1">
