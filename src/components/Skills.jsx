@@ -60,7 +60,7 @@ export default function Skills({ ...props }) {
         <section id="skills" className="py-12 text-base-content">
             <div className="container mx-auto sm:px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-4xl font-bold">
+                    <h2 className="text-3xl md:text-5xl font-bold">
                         Skills</h2>
                     <p className="text-lg opacity-85">
                         A comprehensive list of my technical and professional skills</p>

@@ -55,7 +55,7 @@ export default function Experiences({ ...props }) {
                 <div className="flex flex-wrap my-8">
                     <div className="w-full md:w-1/2 mb-8 sm:p-2">
                         <div className="education">
-                            <h3 className="text-3xl font-extrabold text-gradient mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">🎓 Education</h3>
+                            <h3 className="text-3xl md:text-5xl font-extrabold text-gradient mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">🎓 Education</h3>
                             <div className="education-details">
                                 {educations.map((education, index) => (
                                     <div key={index} className="education-item bg-base-100 p-6 rounded-xl shadow-2xl mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay={education.delay}>
@@ -69,7 +69,7 @@ export default function Experiences({ ...props }) {
                     </div>
                     <div className="w-full md:w-1/2 mb-8 sm:p-2">
                         <div className="work">
-                            <h3 className="text-3xl font-extrabold text-gradient mb-6">💼 Work Experience</h3>
+                            <h3 className="text-3xl md:text-5xl font-extrabold text-gradient mb-6">💼 Work Experience</h3>
                             <div className="experience-details">
                                 {works.map((work, index) => (
                                     <div key={index} className="work-item bg-base-100 p-6 rounded-xl shadow-2xl mb-6" data-aos="fade-up" data-aos-duration="800" data-aos-delay={work.delay}>
