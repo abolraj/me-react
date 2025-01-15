@@ -5,6 +5,7 @@ import Services from "../components/Services";
 import Skills from "../components/Skills";
 import Certifications from "../components/Certifications";
 import Portfolios from "../components/Portfolios";
+import Pricing from "../components/Pricing";
 
 export default function Main({...props}){
     return (
@@ -16,6 +17,7 @@ export default function Main({...props}){
             <Experiences></Experiences>
             <Certifications></Certifications>
             <Portfolios></Portfolios>
+            <Pricing></Pricing>
         </main>
     )
 }
