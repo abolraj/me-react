@@ -6,6 +6,7 @@ import Skills from "../components/Skills";
 import Certifications from "../components/Certifications";
 import Portfolios from "../components/Portfolios";
 import Pricing from "../components/Pricing";
+import Contact from "../components/Contact";
 
 export default function Main({...props}){
     return (
@@ -18,6 +19,7 @@ export default function Main({...props}){
             <Certifications></Certifications>
             <Portfolios></Portfolios>
             <Pricing></Pricing>
+            <Contact></Contact>
         </main>
     )
 }
