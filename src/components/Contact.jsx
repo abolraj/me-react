@@ -22,7 +22,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="font-sans p-4 text-base-content pt-12 lg:pt-24" id="contact">
+        <section className="font-sans p-4 text-base-content pt-12 lg:pt-24" id="contact" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
             <div className="max-w-6xl mx-auto relative bg-base-100 shadow-lg rounded-3xl overflow-hidden">
                 <div className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full bg-primary"></div>
                 <div className="absolute -top-6 -right-9 sm:-right-6 w-20 h-20 rounded-full bg-primary"></div>
@@ -30,21 +30,21 @@ export default function Contact() {
                 <div className="grid md:grid-cols-2 gap-8 py-8 px-6">
                     <div className="text-center flex flex-col items-center justify-center">
                         <img src={devImg} alt="Contact" className="shrink-0 aspect-[250/196] object-contain" />
-                        <div className="contacts flex flex-wrap gap-3 pt-10">
+                        <div className="contacts flex flex-wrap justify-center gap-3 pt-10">
                             <a href="https://t.me/abol_web">
-                                <FontAwesomeIcon icon={faTelegram} className="h-12 text-blue-700" />
+                                <FontAwesomeIcon icon={faTelegram} className="h-7 sm:h-12 text-blue-700" />
                             </a>
                             <a href="https://www.linkedin.com/in/abolfazl-rajaee-nasab-195aa3225/">
-                                <FontAwesomeIcon icon={faLinkedin} className="h-12 text-cyan-500" />
+                                <FontAwesomeIcon icon={faLinkedin} className="h-7 sm:h-12 text-cyan-500" />
                             </a>
                             <a href="https://wa.me/+989045426387">
-                                <FontAwesomeIcon icon={faWhatsapp} className="h-12 text-green-600" />
+                                <FontAwesomeIcon icon={faWhatsapp} className="h-7 sm:h-12 text-green-600" />
                             </a>
                             <a href="mailto:fazlabol18@gmail.com">
-                                <FontAwesomeIcon icon={faAt} className="h-12 text-red-500" />
+                                <FontAwesomeIcon icon={faAt} className="h-7 sm:h-12 text-red-500" />
                             </a>
                             <a href="https://github.com/abolraj">
-                                <FontAwesomeIcon icon={faGithub} className="h-12 text-white" />
+                                <FontAwesomeIcon icon={faGithub} className="h-7 sm:h-12 text-white" />
                             </a>
                         </div>
                     </div>
