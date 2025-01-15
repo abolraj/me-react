@@ -102,7 +102,7 @@ export default function Certifications({ ...props }) {
     };
 
     return (
-        <section id="certifications" className="py-12">
+        <section id="certifications" className="py-12 pt-12 lg:pt-24">
             <div className="container mx-auto px-4 text-base-content">
                 <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <h3 className="text-3xl md:text-5xl font-extrabold">Certifications</h3>

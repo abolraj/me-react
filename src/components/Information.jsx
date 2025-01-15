@@ -4,7 +4,7 @@ import { faDownload, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Information({ ...props }) {
     return (
-        <section class="about mt-24" id="about">
+        <section class="about pt-12 lg:pt-24" id="about">
             <div class="container mx-auto">
                 <div class="row flex flex-wrap overflow-hidden">
                     <div class="w-full box-border md:w-1/2">

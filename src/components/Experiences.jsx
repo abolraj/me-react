@@ -50,7 +50,7 @@ const works = [
 
 export default function Experiences({ ...props }) {
     return (
-        <section className="experience text-base-content" id="experience">
+        <section className="experience text-base-content pt-12 lg:pt-24" id="experience">
             <div className="container mx-auto sm:px-4">
                 <div className="flex flex-wrap my-8">
                     <div className="w-full md:w-1/2 mb-8 sm:p-2">

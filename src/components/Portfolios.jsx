@@ -189,7 +189,7 @@ export default function Portfolios(props) {
     };
 
     return (
-        <section className="portfolio text-base-content pt-16" id="portfolio">
+        <section className="portfolio text-base-content pt-12 lg:pt-24" id="portfolio">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 gap-4 section-separator">
                     <div className="section-title col-span-12" data-aos="fade-up">
@@ -246,7 +246,7 @@ export default function Portfolios(props) {
             </div>
             {modals.map((modal, index) => (
                 <dialog key={index} id={`modal-${modal.id}`} className="modal">
-                    <div className="modal-box w-11/12 max-w-5xl bg-neutral">
+                    <div className="modal-box w-11/12 max-w-5xl bg-base-100">
                         <button className="btn btn-sm btn-circle absolute right-2 top-2" onClick={() => document.getElementById(`modal-${modal.id}`).close()}>✕</button>
                         <h2 className="text-2xl font-bold border-b-2 border-base-content pb-2">{modal.title}</h2>
                         <img src={modal.image} loading='lazy' className="w-full h-auto mb-4 rounded-b-lg overflow-hidden" alt="portfolio" />
