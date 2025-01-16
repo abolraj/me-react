@@ -7,6 +7,7 @@ import Certifications from "../components/Certifications";
 import Portfolios from "../components/Portfolios";
 import Pricing from "../components/Pricing";
 import Contact from "../components/Contact";
+import Reviews from "../components/Reviews";
 
 export default function Main({...props}){
     return (
@@ -19,6 +20,7 @@ export default function Main({...props}){
             <Certifications></Certifications>
             <Portfolios></Portfolios>
             <Pricing></Pricing>
+            <Reviews></Reviews>
             <Contact></Contact>
         </main>
     )
