@@ -44,7 +44,7 @@ export default function Contact() {
                                 <FontAwesomeIcon icon={faAt} className="h-7 sm:h-12 text-red-500" />
                             </a>
                             <a href="https://github.com/abolraj">
-                                <FontAwesomeIcon icon={faGithub} className="h-7 sm:h-12 text-white" />
+                                <FontAwesomeIcon icon={faGithub} className="h-7 sm:h-12 text-base-content" />
                             </a>
                         </div>
                     </div>

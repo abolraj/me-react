@@ -6,7 +6,7 @@ import { faGithub, faLinkedin, faTelegram } from "@fortawesome/fontawesome-free-
 
 export default function Hero({ ...props }) {
     return (
-        <section class="text-base-content py-4 pt-12 lg:pt-24" id="home">
+        <section class="text-base-content py-4 pt-12 lg:pt-24 max-w-[60rem] mx-auto" id="home">
             <div class="bg-opacity-50">
                 <div class="container mx-auto">
                     <div class="flex flex-wrap-reverse gap-2 justify-between items-end">
