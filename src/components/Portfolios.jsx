@@ -218,7 +218,7 @@ export default function Portfolios(props) {
                                             data-aos="fade-up"
                                             value={`.${tag.toLowerCase().replace(' ', '-')}`}
                                         >
-                                            <span>{tag}</span>
+                                            {tag}
                                         </option>
                                     ))}
                                 </select>
