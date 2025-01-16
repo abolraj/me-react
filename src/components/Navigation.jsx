@@ -31,7 +31,7 @@ export default function Navigation({ ...props }) {
                             <a class="text-base-content" href="#pricing">Pricing</a>
                         </li>
                         <li>
-                            <a class="text-base-content" href="#blog">Blog</a>
+                            <a class="text-base-content" href="#reviews">Rates</a>
                         </li>
                         <li>
                             <a class="text-base-content" href="#contact">Contact</a>
