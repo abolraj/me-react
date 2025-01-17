@@ -5,6 +5,7 @@ import Header from './parts/Header'
 import Main from './parts/Main'
 import { useEffect } from 'react'
 import 'aos/dist/aos.css'
+import './i18n.js'
 
 function App() {
   useEffect(()=>{

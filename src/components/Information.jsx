@@ -1,44 +1,44 @@
-import devImg from '@assets/patrik.webp'
-import { faLaravel, faPhp } from '@fortawesome/fontawesome-free-brands'
-import { faDownload, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import devImg from '@assets/patrik.webp';
+import { faLaravel, faPhp } from '@fortawesome/fontawesome-free-brands';
+import { faDownload, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
+
 export default function Information({ ...props }) {
+    const { t } = useTranslation(); // Initialize the t() function
+
     return (
-        <section class="about pt-12 lg:pt-24" id="about">
-            <div class="container mx-auto">
-                <div class="row flex flex-wrap overflow-hidden">
-                    <div class="w-full box-border md:w-1/2">
-                        <div class="about-img max-w-96  max-md:mx-auto" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
-                            <img src={devImg} loading="lazy" alt="Developer Image" class="img-fluid h-full" />
+        <section className="about pt-12 lg:pt-24" id="about">
+            <div className="container mx-auto">
+                <div className="row flex flex-wrap overflow-hidden">
+                    <div className="w-full box-border md:w-1/2">
+                        <div className="about-img max-w-96 max-md:mx-auto" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
+                            <img src={devImg} loading="lazy" alt="Developer Image" className="img-fluid h-full" />
                         </div>
                     </div>
-                    <div class="w-full box-border md:w-1/2">
-                        <div class="about-inner text-base-content text-left">
-                            <h2 class="text-4xl font-bold mb-4" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
-                                About Me &nbsp;
-                                <FontAwesomeIcon icon={faInfoCircle}/>
+                    <div className="w-full box-border md:w-1/2">
+                        <div className="about-inner text-base-content text-left">
+                            <h2 className="text-4xl font-bold mb-4" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+                                {t("information.title")} &nbsp;
+                                <FontAwesomeIcon icon={faInfoCircle} />
                             </h2>
-                            <p class="text-lg mb-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
-                                Hello, I’m <strong className="text-info">Abolfazl</strong>, a web developer based in Mashhad.
-                                I am a talented web developer specializing in <strong className="text-error">Laravel</strong>.
-                                With expertise in PHP, MySQL, HTML, CSS, and JS, my skillset is diverse and dynamic.
-                                Passionate about coding intelligently, I aim to create innovative and impactful solutions.
-                                With my in-depth understanding of web development, I consistently craft exceptional experiences for users.
+                            <p className="text-lg mb-6 aos-init aos-animate" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                                {t("information.description.part1")}{" "}
+                                <strong className="text-info">{t("information.description.name")}</strong>
+                                {t("information.description.part2")}{" "}
+                                <strong className="text-error">{t("information.description.specialization")}</strong>
+                                {t("information.description.part3")}
                             </p>
-                            <div class="about-tag flex flex-wrap gap-2 mb-6 " data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
-                                <span class="badge badge-primary badge-outline p-4">Laravel</span>
-                                <span class="badge badge-primary badge-outline p-4">PHP</span>
-                                <span class="badge badge-primary badge-outline p-4">MySQL</span>
-                                <span class="badge badge-primary badge-outline p-4">WordPress</span>
-                                <span class="badge badge-primary badge-outline p-4">Bootstrap 5</span>
-                                <span class="badge badge-primary badge-outline p-4">Tailwind</span>
-                                <span class="badge badge-primary badge-outline p-4">HTML</span>
-                                <span class="badge badge-primary badge-outline p-4">CSS</span>
-                                <span class="badge badge-primary badge-outline p-4">JavaScript</span>
+                            <div className="about-tag flex flex-wrap gap-2 mb-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+                                {t("information.skills", { returnObjects: true }).map((skill, index) => (
+                                    <span key={index} className="badge badge-primary badge-outline p-4">
+                                        {skill}
+                                    </span>
+                                ))}
                             </div>
                             <a href="resume.pdf">
                                 <button className="btn btn-primary w-full md:w-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                    Download CV
+                                    {t("information.download_button")}
                                     <FontAwesomeIcon icon={faDownload} />
                                 </button>
                             </a>
@@ -47,5 +47,5 @@ export default function Information({ ...props }) {
                 </div>
             </div>
         </section>
-    )
+    );
 }

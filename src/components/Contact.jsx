@@ -4,8 +4,10 @@ import devImg from '@assets/patrik.webp';
 import { faAt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faTelegram, faWhatsapp } from '@fortawesome/fontawesome-free-brands';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 export default function Contact() {
+    const { t } = useTranslation(); // Initialize useTranslation
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -14,10 +16,10 @@ export default function Contact() {
         emailjs.sendForm('service_yra8r65', 'template_ofin9bc', form.current, 'eF37qRoSOqP5FTihC')
             .then((result) => {
                 console.log(result.text);
-                alert('Message sent successfully!');
+                alert(t('contact.alerts.success')); // Use t() for success message
             }, (error) => {
                 console.log(error.text);
-                alert('Failed to send message. Please try again.');
+                alert(t('contact.alerts.error')); // Use t() for error message
             });
     };
 
@@ -52,39 +54,65 @@ export default function Contact() {
                     <form ref={form} onSubmit={sendEmail} className="rounded-tl-3xl rounded-bl-3xl max-md:-order-1">
                         <h2 className="text-2xl text-primary font-bold text-center mb-6 flex flex-wrap justify-center items-center gap-2">
                             <FontAwesomeIcon icon={faAt} className='h-7' />
-                            Contact Me
+                            {t('contact.title')} {/* Use t() for title */}
                         </h2>
                         <div className="max-w-md mx-auto space-y-3 relative">
                             <div className="relative">
                                 <label htmlFor="name" className="label">
-                                    <span className="label-text">Name</span>
+                                    <span className="label-text">{t('contact.form.name.label')}</span> {/* Use t() for label */}
                                 </label>
-                                <input id="name" type="text" name="user_name" placeholder="Name" className="input input-bordered peer w-full bg-base-200 focus:bg-base-100" required />
+                                <input
+                                    id="name"
+                                    type="text"
+                                    name="user_name"
+                                    placeholder={t('contact.form.name.placeholder')} // Use t() for placeholder
+                                    className="input input-bordered peer w-full bg-base-200 focus:bg-base-100"
+                                    required
+                                />
                                 <span className="hidden peer-required:block absolute text-error -left-2 -top-0 text-2xl">*</span>
                             </div>
                             <div className="relative">
                                 <label htmlFor="email" className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text">{t('contact.form.email.label')}</span> {/* Use t() for label */}
                                 </label>
-                                <input id="email" type="email" name="user_email" placeholder="Email" className="input input-bordered w-full bg-base-200 focus:bg-base-100" />
+                                <input
+                                    id="email"
+                                    type="email"
+                                    name="user_email"
+                                    placeholder={t('contact.form.email.placeholder')} // Use t() for placeholder
+                                    className="input input-bordered w-full bg-base-200 focus:bg-base-100"
+                                />
                             </div>
                             <div className="relative">
                                 <label htmlFor="phone" className="label">
-                                    <span className="label-text">Phone No.</span>
+                                    <span className="label-text">{t('contact.form.phone.label')}</span> {/* Use t() for label */}
                                 </label>
-                                <input id="phone" type="text" name="user_phone" placeholder="Phone No." className="input input-bordered w-full bg-base-200 focus:bg-base-100" />
+                                <input
+                                    id="phone"
+                                    type="text"
+                                    name="user_phone"
+                                    placeholder={t('contact.form.phone.placeholder')} // Use t() for placeholder
+                                    className="input input-bordered w-full bg-base-200 focus:bg-base-100"
+                                />
                             </div>
                             <div className="relative">
                                 <label htmlFor="message" className="label">
-                                    <span className="label-text">Message</span>
+                                    <span className="label-text">{t('contact.form.message.label')}</span> {/* Use t() for label */}
                                 </label>
-                                <textarea id="message" name="message" placeholder="Message" rows="6" className="textarea peer textarea-bordered w-full bg-base-200 focus:bg-base-100" required></textarea>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    placeholder={t('contact.form.message.placeholder')} // Use t() for placeholder
+                                    rows="6"
+                                    className="textarea peer textarea-bordered w-full bg-base-200 focus:bg-base-100"
+                                    required
+                                ></textarea>
                                 <span className="hidden peer-required:block absolute text-error -left-2 top-0 text-2xl">*</span>
                             </div>
 
                             <button type="submit" className="btn btn-primary w-full mt-6">
                                 <FontAwesomeIcon icon={faPaperPlane} className='mr-2' />
-                                Send Message
+                                {t('contact.form.send_button')} {/* Use t() for button text */}
                             </button>
                         </div>
                     </form>
