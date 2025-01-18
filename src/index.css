@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Quicksand:wght@500&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -18,7 +20,14 @@
 }
 
 * {
-  font-family: "Quicksand", serif;
+  font-family: "Quicksand", cursive, sans-serif, serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+*:lang(fa), *:lang(ar){
+  font-family: "Lalezar", cursive, sans-serif, serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
