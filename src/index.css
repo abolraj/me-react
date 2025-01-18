@@ -33,6 +33,10 @@
   font-style: normal;
 }
 
+html:lang(fa), html:lang(ar){
+  direction: rtl;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
