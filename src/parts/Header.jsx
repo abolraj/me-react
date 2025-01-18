@@ -1,3 +1,4 @@
+import LanguageSwitcher from "../components/LanguageSwitcher";
 import Navigation from "../components/Navigation";
 import bannerImg from "@assets/abolfazl.webp"
 
@@ -8,6 +9,7 @@ export default function Header({ ...props }) {
                 <img src={bannerImg} loading="lazy" alt="abolfazl" className="mx-auto h-full"/>
             </section>
             <Navigation></Navigation>
+            <LanguageSwitcher></LanguageSwitcher>
         </header>
     )
 }
