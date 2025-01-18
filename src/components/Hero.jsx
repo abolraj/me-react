@@ -16,7 +16,7 @@ export default function Hero({ ...props }) {
                         <div className="w-full sm:w-1/2">
                             <div className="text-start">
                                 <div data-aos="fade-up">
-                                    <span className="bg-info text-info-content text-lg font-bold px-6 py-2 rounded-bl-none rounded-full inline-block">
+                                    <span className="bg-info text-info-content text-lg font-bold px-6 py-2 ltr:rounded-bl-none rtl:rounded-br-none rounded-full inline-block">
                                         {t('hero.greeting')} {/* Use t() for greeting */}
                                     </span>
                                 </div>
@@ -29,26 +29,26 @@ export default function Hero({ ...props }) {
                                 <ul className="mt-5 space-y-3">
                                     <li className="group flex items-center space-x-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                                         <FontAwesomeIcon icon={faEnvelope} className="group-hover:text-info" />
-                                        <a href="mailto:fazlabol18@gmail.com" className="link-info text-base-content">
+                                        <a href="mailto:fazlabol18@gmail.com" className="link-info text-base-content !mx-2" dir="ltr">
                                             {t('hero.contact.email')} {/* Use t() for email */}
                                         </a>
                                     </li>
                                     <li className="group flex items-center space-x-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
                                         <FontAwesomeIcon icon={faPhone} className="group-hover:text-info" />
-                                        <a href="tel:+989045426387" className="link-info text-base-content">
+                                        <a href="tel:+989045426387" className="link-info text-base-content !mx-2" dir="ltr">
                                             {t('hero.contact.phone')} {/* Use t() for phone */}
                                         </a>
                                     </li>
                                     <li className="group flex items-center space-x-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                                         <FontAwesomeIcon icon={faLocationDot} className="group-hover:text-info" />
-                                        <address>
-                                            <a href="https://www.google.com/maps?q=Mashhad,Iran" className="link-info text-base-content">
+                                        <address className="!m-0">
+                                            <a href="https://www.google.com/maps?q=Mashhad,Iran" className="link-info text-base-content !mx-2">
                                                 {t('hero.contact.location')} {/* Use t() for location */}
                                             </a>
                                         </address>
                                     </li>
                                 </ul>
-                                <ul className="flex space-x-3 mt-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                                <ul className="flex mt-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
                                     <li>
                                         <a href="https://github.com/abolraj" className="link text-base-content">
                                             <button className="btn btn-ghost text-xl">
