@@ -12,6 +12,7 @@ function App() {
   const {i18n} = useTranslation()
   useEffect(()=>{
     document.documentElement.lang = i18n.language
+    document.dir = i18n.dir()
     Aos.init({
       once: true
     })
