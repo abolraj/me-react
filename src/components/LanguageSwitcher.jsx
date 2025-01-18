@@ -32,7 +32,7 @@ export default function LanguageSwitcher({ ...props }) {
 
     return (
         <div className="fixed bottom-2 left-2">
-            <div className="dropdown dropdown-top [&:lang(fa)]:dropdown-end [&:lang(ar)]:dropdown-end">
+            <div className="dropdown dropdown-top rtl:dropdown-end">
                 <label tabIndex={0} className="btn btn-ghost rounded-btn">
                     <img src={lang.icon} loading='lazy' alt={"Flag "+lang.code} className='w-5 h-5'/>
                 </label>
