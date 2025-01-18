@@ -30,7 +30,7 @@ export default function Services({ ...props }) {
         <section className="service text-base-content" id="service">
             <div className="container mx-auto py-12">
                 <div className="flex flex-wrap justify-center items-stretch">
-                    <div className="text-center grow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div className="text-center w-full grow" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                         <h2 className="text-3xl md:text-5xl font-bold mb-10">
                             {t("services.title")} {/* Localized title */}
                         </h2>

@@ -4,6 +4,7 @@ import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import enResources from '@/locales/en.js'
 import faResources from '@/locales/fa.js'
+import arResources from '@/locales/ar.js'
 import I18nextBrowserLanguageDetector from "i18next-browser-languagedetector/cjs";
 
 i18n
@@ -19,6 +20,9 @@ i18n
             },
             fa: {
                 translation: faResources,
+            },            
+            ar: {
+                translation: arResources,
             },            
         },
         fallbackLng: "en",
