@@ -164,8 +164,9 @@ export default function Portfolios(props) {
         setIsotope(isotopeTemp);
 
         document.addEventListener('DOMContentLoaded', ()=>{
-            isotopeTemp.arrange({ filter: selectedFilter });
-            console.log('loaded')
+            setTimeout(()=>{
+                isotopeTemp.arrange({ filter: selectedFilter });
+            },2000)
         })
 
     }, []);
