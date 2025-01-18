@@ -45,7 +45,7 @@ export default function Reviews({ ...props }) {
                                             <p className="text-center text-yellow-400">
                                                 {ratingEls.slice(0, review.rating)}
                                             </p>
-                                            <p className="text-left mt-2 grow">{review.text}</p>
+                                            <p className="text-start mt-2 grow">{review.text}</p>
                                             <h4 className="text-center text-primary mt-4 font-bold">@{review.name}</h4>
                                             <span className="text-center text-info block mt-1 text-sm text-gray-400">{review.title}</span>
                                         </div>

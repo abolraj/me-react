@@ -41,7 +41,7 @@ export default function Services({ ...props }) {
                                 <div className="text-center">
                                     <FontAwesomeIcon icon={service.icon} className={`${service.iconColor} text-7xl md:text-9xl mb-6`} />
                                     <h3 className="text-xl md:text-3xl font-semibold">{service.title}</h3>
-                                    <p className="leading-relaxed text-left">
+                                    <p className="leading-relaxed text-start">
                                         {service.description}
                                     </p>
                                 </div>

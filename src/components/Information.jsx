@@ -17,7 +17,7 @@ export default function Information({ ...props }) {
                         </div>
                     </div>
                     <div className="w-full box-border md:w-1/2">
-                        <div className="about-inner text-base-content text-left">
+                        <div className="about-inner text-base-content text-start">
                             <h2 className="text-4xl font-bold mb-4" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
                                 {t("information.title")} &nbsp;
                                 <FontAwesomeIcon icon={faInfoCircle} />

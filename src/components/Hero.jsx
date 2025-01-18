@@ -14,7 +14,7 @@ export default function Hero({ ...props }) {
                 <div className="container mx-auto">
                     <div className="flex flex-wrap-reverse gap-2 justify-between items-end">
                         <div className="w-full sm:w-1/2">
-                            <div className="text-left">
+                            <div className="text-start">
                                 <div data-aos="fade-up">
                                     <span className="bg-info text-info-content text-lg font-bold px-6 py-2 rounded-bl-none rounded-full inline-block">
                                         {t('hero.greeting')} {/* Use t() for greeting */}

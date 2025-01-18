@@ -58,7 +58,7 @@ export default function Experiences({ ...props }) {
                                             {education.title} <a href={education.link} className="text-accent hover:underline">{education.institution}</a>
                                         </h4>
                                         <div className="text-sm text-info mb-2">{education.year}</div>
-                                        <p className="text-left text-base-content">{education.description}</p>
+                                        <p className="text-start text-base-content">{education.description}</p>
                                     </div>
                                 ))}
                             </div>
@@ -76,8 +76,8 @@ export default function Experiences({ ...props }) {
                                             {work.title} <a href={work.link} className="text-accent hover:underline">{work.company}</a>
                                         </h4>
                                         <div className="text-sm text-info text-center mb-2">{work.year}</div>
-                                        <span className="font-medium text-left w-full block mb-2">Responsibilities:</span>
-                                        <ul className="work-responsibility text-left list-['⭐'] list-inside ml-3">
+                                        <span className="font-medium text-start w-full block mb-2">Responsibilities:</span>
+                                        <ul className="work-responsibility text-start list-['⭐'] list-inside ml-3">
                                             {work.responsibilities.map((responsibility, idx) => (
                                                 <li key={idx} className="my-2">{responsibility}</li>
                                             ))}

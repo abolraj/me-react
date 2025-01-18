@@ -186,7 +186,7 @@ export default function Portfolios(props) {
                                     <span>{t("portfolios.filters.all_categories")}</span>
                                 </li>
                                 <select
-                                    className="select grow-[10] w-32 max-w-full text-left data-[selected=1]:select-primary data-[selected=1]:outline-1 !m-0"
+                                    className="select grow-[10] w-32 max-w-full text-start data-[selected=1]:select-primary data-[selected=1]:outline-1 !m-0"
                                     data-selected={selectedFilter !== "*" ? 1 : 0}
                                     onChange={(e) => handleFilterKeyChange(e.target.value)}
                                 >
@@ -233,7 +233,7 @@ export default function Portfolios(props) {
                         <button className="btn btn-sm btn-circle absolute right-2 top-2" onClick={() => document.getElementById(`modal-${modal.id}`).close()}>✕</button>
                         <h2 className="text-2xl font-bold border-b-2 border-base-content pb-2">{modal.title}</h2>
                         <img src={modal.image} loading='lazy' className="w-full h-auto mb-4 rounded-b-lg overflow-hidden" alt="portfolio" />
-                        <p className="py-4 text-left">{modal.description}</p>
+                        <p className="py-4 text-start">{modal.description}</p>
                         <div className="about-tag mb-4">
                             <ul className="flex flex-wrap">
                                 {modal.tags.map((tag, idx) => (
