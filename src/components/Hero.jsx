@@ -1,8 +1,15 @@
 import { useEffect } from "react";
 import heroImg from "@assets/hero.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faLocationDot, faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin, faTelegram } from "@fortawesome/fontawesome-free-brands";
+
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
+import {faLocationDot} from "@fortawesome/free-solid-svg-icons/faLocationDot";
+import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
+
+import { faGithub } from "@fortawesome/fontawesome-free-brands/faGithub";
+import { faLinkedin } from "@fortawesome/fontawesome-free-brands/faLinkedin";
+import { faTelegram } from "@fortawesome/fontawesome-free-brands/faTelegram";
+
 import { useTranslation } from "react-i18next"; // Import useTranslation
 
 export default function Hero({ ...props }) {

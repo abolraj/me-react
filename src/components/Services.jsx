@@ -1,4 +1,7 @@
-import { faImage, faLifeRing, faServer } from "@fortawesome/free-solid-svg-icons";
+import { faImage } from "@fortawesome/free-solid-svg-icons/faImage";
+import { faLifeRing } from "@fortawesome/free-solid-svg-icons/faLifeRing";
+import { faServer } from "@fortawesome/free-solid-svg-icons/faServer";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 

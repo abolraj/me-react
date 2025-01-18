@@ -1,4 +1,6 @@
-import { faCircleUser, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons/faCircleUser";
+import { faStar } from "@fortawesome/free-solid-svg-icons/faStar";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Flickity from "flickity";
 import { useEffect, useState } from "react";

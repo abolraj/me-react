@@ -1,4 +1,14 @@
-import { faAt, faAward, faBars, faBriefcase, faCodeBranch, faDollarSign, faDumbbell, faInfo, faMugHot, faStar } from "@fortawesome/free-solid-svg-icons";
+import { faAt } from "@fortawesome/free-solid-svg-icons/faAt";
+import { faAward } from "@fortawesome/free-solid-svg-icons/faAward";
+import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
+import { faBriefcase } from "@fortawesome/free-solid-svg-icons/faBriefcase";
+import { faCodeBranch } from "@fortawesome/free-solid-svg-icons/faCodeBranch";
+import { faDollarSign } from "@fortawesome/free-solid-svg-icons/faDollarSign";
+import { faDumbbell } from "@fortawesome/free-solid-svg-icons/faDumbbell";
+import { faInfo } from "@fortawesome/free-solid-svg-icons/faInfo";
+import { faMugHot } from "@fortawesome/free-solid-svg-icons/faMugHot";
+import { faStar } from "@fortawesome/free-solid-svg-icons/faStar";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 
