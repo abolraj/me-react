@@ -21,7 +21,6 @@ i18n
                 translation: faResources,
             },            
         },
-        lng:"fa",
         fallbackLng: "en",
 
         interpolation: {
