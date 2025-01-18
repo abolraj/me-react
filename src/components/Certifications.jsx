@@ -22,7 +22,10 @@ export default function Certifications({ ...props }) {
             layoutMode: 'fitRows',
         });
 
-        isotope.current.arrange({ filter: selectedFilter });
+        document.addEventListener('DOMContentLoaded', ()=>{
+            isotope.current.arrange({ filter: selectedFilter })
+            console.log('loaded')
+        })
 
         return () => isotope.current.destroy();
     }, []);

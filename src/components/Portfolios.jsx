@@ -163,7 +163,11 @@ export default function Portfolios(props) {
         })
         setIsotope(isotopeTemp);
 
-        isotopeTemp.arrange({ filter: selectedFilter });
+        document.addEventListener('DOMContentLoaded', ()=>{
+            isotopeTemp.arrange({ filter: selectedFilter });
+            console.log('loaded')
+        })
+
     }, []);
 
     const showModal = (id) => {
