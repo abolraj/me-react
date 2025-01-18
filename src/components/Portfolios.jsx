@@ -163,11 +163,15 @@ export default function Portfolios(props) {
         })
         setIsotope(isotopeTemp);
 
-        document.addEventListener('DOMContentLoaded', ()=>{
-            setTimeout(()=>{
-                isotopeTemp.arrange({ filter: selectedFilter });
-            },2000)
-        })
+        const projectGallery = document.querySelector("#portfolios-gallery")
+        document.addEventListener("scroll", function (e) {
+            if (projectGallery.getBoundingClientRect().bottom <= window.innerHeight && !projectGallery.classList.contains('started-animation-in-scroll')) {
+                projectGallery.classList.add('started-animation-in-scroll');
+                setTimeout(()=>{
+                    isotopeTemp.arrange({ filter: selectedFilter });
+                },200)
+            }
+        });
 
     }, []);
 
@@ -216,7 +220,7 @@ export default function Portfolios(props) {
                             </ul>
                         </div>
                         <hr className='horizontal border-primary' />
-                        <div className="project-gallery col-span-12" id="project-gallery" data-aos="fade-up">
+                        <div className="project-gallery col-span-12" id="portfolios-gallery" data-aos="fade-up">
                             <div className="portfolioContainer">
                                 {portfolioItems.map((item, index) => ( 
                                     <div key={index} className={`grid-item w-full sm:w-1/2 md:w-1/3 user-interface ${item.tags.map(tag => tag.toLowerCase().replace(' ', '-')).join(' ')}`} onClick={() => showModal(item.modalId)}>

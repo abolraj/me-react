@@ -22,10 +22,15 @@ export default function Certifications({ ...props }) {
             layoutMode: 'fitRows',
         });
 
-        document.addEventListener('DOMContentLoaded', ()=>{
-            isotope.current.arrange({ filter: selectedFilter })
-            console.log('loaded')
-        })
+        const projectGallery = document.querySelector("#certifications-gallery")
+        document.addEventListener("scroll", function (e) {
+            if (projectGallery.getBoundingClientRect().bottom <= window.innerHeight && !projectGallery.classList.contains('started-animation-in-scroll')) {
+                projectGallery.classList.add('started-animation-in-scroll');
+                setTimeout(()=>{
+                    isotope.current.arrange({ filter: selectedFilter });
+                },200)
+            }
+        });
 
         return () => isotope.current.destroy();
     }, []);
@@ -132,7 +137,7 @@ export default function Certifications({ ...props }) {
                     </ul>
                 </div>
                 <div
-                    id="project-gallery"
+                    id="certifications-gallery"
                     className="certificationContainer grid gap-0"
                     data-aos="fade-up"
                     data-aos-duration="800"
