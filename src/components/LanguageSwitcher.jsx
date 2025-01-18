@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFlagUsa, faFlag, faFlagCheckered } from '@fortawesome/free-solid-svg-icons';
 import FlagIran from '@assets/svg/countries/iran.svg'
 import FlagPalestine from '@assets/svg/countries/palestine.svg'
 import FlagUK from '@assets/svg/countries/united_kingdom.svg'
@@ -26,8 +24,11 @@ export default function LanguageSwitcher({ ...props }) {
 
     // Update HTML lang attribute for SEO
     useEffect(() => {
-        document.documentElement.lang = i18n.language;
-        setLang(languages.find((lang) => lang.code === i18n.language))
+
+        const languageCode = i18n.language.split('-')[0]
+        document.documentElement.lang = languageCode;
+        setLang(languages.find((lang) => lang.code === languageCode))
+
     }, [i18n.language]);
 
     return (
