@@ -22,6 +22,8 @@ export default function Certifications({ ...props }) {
             layoutMode: 'fitRows',
         });
 
+        isotope.current.arrange({ filter: selectedFilter });
+
         return () => isotope.current.destroy();
     }, []);
 

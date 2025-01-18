@@ -157,10 +157,13 @@ export default function Portfolios(props) {
     };
 
     useEffect(() => {
-        setIsotope(new Isotope('.portfolioContainer', {
+        const isotopeTemp = new Isotope('.portfolioContainer', {
             itemSelector: '.grid-item',
             layoutMode: 'masonry'
-        }));
+        })
+        setIsotope(isotopeTemp);
+
+        isotopeTemp.arrange({ filter: selectedFilter });
     }, []);
 
     const showModal = (id) => {
