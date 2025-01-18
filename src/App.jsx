@@ -6,13 +6,17 @@ import Main from './parts/Main'
 import { useEffect } from 'react'
 import 'aos/dist/aos.css'
 import './i18n.js'
+import { useTranslation } from 'react-i18next'
 
 function App() {
+  const {i18n} = useTranslation()
   useEffect(()=>{
+    document.documentElement.lang = i18n.language
     Aos.init({
       once: true
     })
-  },[])
+  },[i18n.language])
+
 
   return (
     <>
