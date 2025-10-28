@@ -1,0 +1,20 @@
+// src/router/index.js
+import { createRouter } from '@tanstack/react-router'
+import { Route as RootRoute } from './routes/RootRoute'
+import { PortfoliosRoute } from './routes/PortfoliosRoute'
+import { ReviewsRoute } from './routes/ReviewsRoute'
+import { CertificationsRoute } from './routes/CertificationsRoute'
+import { ServicesRoute } from './routes/ServicesRoute'
+import { ContactRoute } from './routes/ContactRoute'
+import { HomeRoute } from './routes/HomeRoute'
+
+const routeTree = RootRoute.addChildren([
+    HomeRoute,
+    PortfoliosRoute,
+    ReviewsRoute,
+    CertificationsRoute,
+    ServicesRoute,
+    ContactRoute,
+])
+
+export const router = createRouter({ routeTree })
