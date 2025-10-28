@@ -10,7 +10,7 @@ import { faMugHot } from "@fortawesome/free-solid-svg-icons/faMugHot";
 import { faStar } from "@fortawesome/free-solid-svg-icons/faStar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 export default function Navigation({ ...props }) {
@@ -28,10 +28,13 @@ export default function Navigation({ ...props }) {
         { icon: faAt, label: t("navigation.items.8.label"), href: t("navigation.items.8.href") },
     ];
 
+
+
     return (
         <nav className="dropdown [&:lang(fa)]:dropdown-end  max-lg:bg-transparent z-50 max-lg:aspect-square rounded-box">
-            <button tabIndex="0" role="button" className="btn btn-ghost bg-opacity-30 btn-circle p-2 lg:hidden">
-                <Menu className="size-10 sm:size-16 lg:size-20" />
+            <button tabIndex="0" role="button" id="header-menu-btn" className="group btn btn-ghost !border-none focus:rotate-90 transition-transform min-h-min bg-opacity-30 btn-circle p-2 box-border lg:hidden size-10 sm:size-16 lg:size-20">
+                <Menu className="size-full group-focus:hidden" />
+                <X className="size-full hidden group-focus:block" onClick={()=>document.querySelector('#header-menu-btn').blur()}/>
             </button>
             <ul tabIndex="0" className="menu max-lg:bg-base-100 max-lg:dropdown-content lg:w-full flex-nowrap overflow-x-auto max-lg:mt-2 max-h-[60vh] lg:menu-horizontal max-lg:flex-col  flex justify-around gap-2 p-2 rounded-box">
                 {navItems.map((item, index) => (
