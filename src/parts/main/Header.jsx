@@ -1,5 +1,5 @@
-import LanguageSwitcher from "../components/LanguageSwitcher";
-import Navigation from "../components/Navigation";
+import LanguageSwitcher from "@components/LanguageSwitcher";
+import Navigation from "@components/Navigation";
 import bannerImg from "@assets/abolfazl.webp"
 
 export default function Header({ ...props }) {
