@@ -6,7 +6,7 @@ export default function MainLayout({
 }) {
 
     return (
-        <div>
+        <div className="p-2">
             <Header />
             <main className="text-base-300">
                 {children}
