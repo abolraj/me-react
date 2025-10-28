@@ -8,7 +8,7 @@ export default function Footer({ ...props }) {
     return (    
         <footer className="p-5 flex justify-center items-center flex-col">  
             <div className="mb-4">      
-                <p className="text-lg"> 
+                <p className="text-lg text-base-content"> 
                     {t('footer.text')}  
                 </p>        
             </div>       
