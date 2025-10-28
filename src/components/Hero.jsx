@@ -16,7 +16,7 @@ export default function Hero({ ...props }) {
     const { t } = useTranslation(); // Initialize useTranslation
 
     return (
-        <section className="text-base-content py-4 pt-12 lg:pt-24 max-w-[60rem] mx-auto" id="home">
+        <section className="text-base-content py-4 max-w-[60rem] mx-auto" id="home">
             <div className="bg-opacity-50">
                 <div className="container mx-auto">
                     <div className="flex flex-wrap-reverse gap-2 justify-between items-end">
