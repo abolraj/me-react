@@ -372,5 +372,14 @@ export default {
     },
     "footer": {
         "text": "2025 ©️ Developed and designed with ❤️ by me"
+    },
+    "error": {
+        "page_not_found": "Page Not Found",
+        "oops": "Oops!",
+        "looks_lost": "Looks like you've wandered off the map",
+        "description": "The page you're looking for doesn't exist or has been moved to a new location.",
+        "go_home": "Go Home",
+        "go_back": "Go Back",
+        "error_code": "Error Code: 404"
     }
 }
