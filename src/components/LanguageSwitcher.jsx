@@ -32,17 +32,17 @@ export default function LanguageSwitcher({ ...props }) {
     }, [i18n.language]);
 
     return (
-        <div className="fixed bottom-2 left-2">
-            <div className="dropdown dropdown-top rtl:dropdown-end">
-                <label tabIndex={0} className="btn btn-ghost rounded-btn">
-                    <img src={lang.icon} loading='lazy' alt={"Flag "+lang.code} className='w-5 h-5'/>
+        <div className="h-full">
+            <div className="dropdown dropdown-end rtl:dropdown-end h-full min-h-min">
+                <label tabIndex={0} className="btn btn-ghost min-h-min size-10 sm:size-16 lg:size-16 md:p-4 p-1 sm:p-2 box-border rounded-full">
+                    <img src={lang.icon} loading='lazy' alt={"Flag "+lang.code} className='h-full'/>
                 </label>
                 <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
                     {languages.map((lang) => (
                         <li key={lang.code}>
                             <button
                                 onClick={() => changeLanguage(lang.code)}
-                                className={`flex items-center gap-2 ${i18n.language === lang.code ? 'active' : ''}`}
+                                className={`btn pl-2 btn-ghost text-base-content justify-start h-auto min-h-max flex items-center gap-2 ${i18n.language === lang.code ? 'active' : ''}`}
                             >
                                 <img src={lang.icon} loading='lazy' alt={"Flag "+lang.code} className='w-4 h-4'/>
                                 {/* <FontAwesomeIcon icon={lang.icon} className="w-4 h-4" /> */}

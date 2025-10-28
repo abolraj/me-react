@@ -10,6 +10,7 @@ import { faMugHot } from "@fortawesome/free-solid-svg-icons/faMugHot";
 import { faStar } from "@fortawesome/free-solid-svg-icons/faStar";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Menu } from "lucide-react";
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 export default function Navigation({ ...props }) {
@@ -28,22 +29,20 @@ export default function Navigation({ ...props }) {
     ];
 
     return (
-        <div>
-            <nav className="dropdown [&:lang(fa)]:dropdown-end max-lg:fixed max-lg:bg-transparent max-lg:start-2 z-50 max-lg:top-2 max-lg:aspect-square max-lg:float-left bg-base-100 rounded-box">
-                <button tabIndex="0" role="button" className="btn btn-primary bg-opacity-30 btn-circle lg:hidden backdrop-blur-sm shadow-xl">
-                    <FontAwesomeIcon icon={faBars} className="h-1/2" />
-                </button>
-                <ul tabIndex="0" className="menu max-lg:dropdown-content lg:w-full flex-nowrap overflow-x-auto max-lg:mt-2 max-h-[60vh] lg:menu-horizontal max-lg:flex-col bg-base-100 flex justify-around gap-2 p-2 rounded-box">
-                    {navItems.map((item, index) => (
-                        <li key={index} className={item.label === t("navigation.items.0.label") ? 'active' : ''}>
-                            <a className="text-base-content ps-2" href={item.href}>
-                                <FontAwesomeIcon icon={item.icon} className="lg:hidden w-5 text-primary" />
-                                {item.label}
-                            </a>
-                        </li>
-                    ))}
-                </ul>
-            </nav>
-        </div>
+        <nav className="dropdown [&:lang(fa)]:dropdown-end  max-lg:bg-transparent z-50 max-lg:aspect-square rounded-box">
+            <button tabIndex="0" role="button" className="btn btn-ghost bg-opacity-30 btn-circle p-2 lg:hidden">
+                <Menu className="size-10 sm:size-16 lg:size-20" />
+            </button>
+            <ul tabIndex="0" className="menu max-lg:bg-base-100 max-lg:dropdown-content lg:w-full flex-nowrap overflow-x-auto max-lg:mt-2 max-h-[60vh] lg:menu-horizontal max-lg:flex-col  flex justify-around gap-2 p-2 rounded-box">
+                {navItems.map((item, index) => (
+                    <li key={index} className={item.label === t("navigation.items.0.label") ? 'active' : ''}>
+                        <a className="text-base-content max-lg:ps-2 text-xl p-1" href={item.href}>
+                            <FontAwesomeIcon icon={item.icon} className="lg:hidden w-5 text-primary" />
+                            {item.label}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </nav>
     );
 }
