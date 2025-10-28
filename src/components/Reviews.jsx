@@ -31,7 +31,7 @@ export default function Reviews({ ...props }) {
     }, []);
 
     return (
-        <section className="testimonial text-base-content pt-12 lg:pt-24" id="reviews">
+        <section className="testimonial text-base-content pt-12 lg:pt-24 w-full p-4" id="reviews">
             <div className="home-v-img">
                 <div className="container">
                     <div className="row section-separator">
