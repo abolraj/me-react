@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import 'aos/dist/aos.css'
 import './i18n.js'
 import { useTranslation } from 'react-i18next'
+import { useTheme } from './hooks/useTheme'
 
 function App({
   children,
@@ -13,10 +14,11 @@ function App({
     document.documentElement.lang = i18n.language
     document.dir = i18n.dir()
     Aos.init({
-      once: true
+      once: true,
     })
   }, [i18n.language])
 
+  const {darkMode} = useTheme();
 
   return (
     <>
