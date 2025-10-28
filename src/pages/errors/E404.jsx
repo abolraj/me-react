@@ -18,7 +18,7 @@ export default function E404({
             </div>
 
             <div className='relative'>
-                <p className='text-center text-4xl'>
+                <p className='text-center text-4xl text-base-content'>
                     {t('error.page_not_found')}
                 </p>
 
