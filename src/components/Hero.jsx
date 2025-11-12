@@ -1,99 +1,194 @@
-import { useEffect } from "react";
-import heroImg from "@assets/hero.webp";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState, useEffect } from 'react';
+import { Mail, Phone, MapPin, Github, Linkedin, Send, Download, Sparkles, Code2, Palette } from 'lucide-react';
+import { useTranslation } from "react-i18next";
+import heroImg from "@assets/hero.png";
 
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons/faEnvelope";
-import {faLocationDot} from "@fortawesome/free-solid-svg-icons/faLocationDot";
-import {faPhone} from "@fortawesome/free-solid-svg-icons/faPhone";
+export default function Hero() {
+    const { t } = useTranslation();
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const [isVisible, setIsVisible] = useState(false);
 
-import { faGithub } from "@fortawesome/fontawesome-free-brands/faGithub";
-import { faLinkedin } from "@fortawesome/fontawesome-free-brands/faLinkedin";
-import { faTelegram } from "@fortawesome/fontawesome-free-brands/faTelegram";
+    useEffect(() => {
+        setIsVisible(true);
 
-import { useTranslation } from "react-i18next"; // Import useTranslation
+        // const handleMouseMove = (e) => {
+        //   setMousePosition({ x: e.clientX, y: e.clientY });
+        // };
 
-export default function Hero({ ...props }) {
-    const { t } = useTranslation(); // Initialize useTranslation
+        // window.addEventListener('mousemove', handleMouseMove);
+        // return () => window.removeEventListener('mousemove', handleMouseMove);
+    }, []);
+
+    const roles = [t('hero.role')];
+    const [currentRole, setCurrentRole] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentRole((prev) => (prev + 1) % roles.length);
+        }, 3000);
+        return () => clearInterval(interval);
+    }, []);
 
     return (
-        <section className="text-base-content py-4 max-w-[60rem] mx-auto" id="home">
-            <div className="bg-opacity-50">
-                <div className="container mx-auto">
-                    <div className="flex flex-wrap-reverse gap-2 justify-between items-end">
-                        <div className="w-full sm:w-1/2">
-                            <div className="text-start">
-                                <div data-aos="fade-up">
-                                    <span className="bg-info text-info-content text-lg font-bold px-6 py-2 ltr:rounded-bl-none rtl:rounded-br-none rounded-full inline-block">
-                                        {t('hero.greeting')} {/* Use t() for greeting */}
-                                    </span>
-                                </div>
-                                <h2 className="text-4xl sm:text-6xl font-semibold leading-none mt-2 mb-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                                    {t('hero.first-name')} <br /> {t('hero.last-name')} {/* Use t() for name and familyName */}
-                                </h2>
-                                <h4 className="text-xl sm:text-2xl leading-8 mb-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                                    {t('hero.role')} {/* Use t() for role */}
-                                </h4>
-                                <ul className="mt-5 space-y-3">
-                                    <li className="group flex items-center space-x-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                                        <FontAwesomeIcon icon={faEnvelope} className="group-hover:text-info" />
-                                        <a href="mailto:fazlabol18@gmail.com" className="link-info text-base-content !mx-2" dir="ltr">
-                                            {t('hero.contact.email')} {/* Use t() for email */}
-                                        </a>
-                                    </li>
-                                    <li className="group flex items-center space-x-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                                        <FontAwesomeIcon icon={faPhone} className="group-hover:text-info" />
-                                        <a href="tel:+989045426387" className="link-info text-base-content !mx-2" dir="ltr">
-                                            {t('hero.contact.phone')} {/* Use t() for phone */}
-                                        </a>
-                                    </li>
-                                    <li className="group flex items-center space-x-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                                        <FontAwesomeIcon icon={faLocationDot} className="group-hover:text-info" />
-                                        <address className="!m-0">
-                                            <a href="https://www.google.com/maps?q=Mashhad,Iran" className="link-info text-base-content !mx-2">
-                                                {t('hero.contact.location')} {/* Use t() for location */}
-                                            </a>
-                                        </address>
-                                    </li>
-                                </ul>
-                                <ul className="flex mt-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
-                                    <li>
-                                        <a href="https://github.com/abolraj" className="link text-base-content">
-                                            <button className="btn btn-ghost text-xl">
-                                                <FontAwesomeIcon icon={faGithub} />
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/abolfazl-rajaee-nasab-195aa3225" className="link text-base-content">
-                                            <button className="btn btn-ghost text-xl">
-                                                <FontAwesomeIcon icon={faLinkedin} />
-                                            </button>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://t.me/abol_web" className="link text-base-content">
-                                            <button className="btn btn-ghost text-xl">
-                                                <FontAwesomeIcon icon={faTelegram} />
-                                            </button>
-                                        </a>
-                                    </li>
-                                </ul>
+        <section className="relative min-h-screen container p-2  max-lg:pt-10" id="home">
+            {/* Animated background gradient */}
+            {/* <div 
+        className="absolute inset-0 opacity-30 pointer-events-none"
+        style={{
+          background: `radial-gradient(circle at ${mousePosition.x - 30}px ${mousePosition.y - 90}px, rgba(139, 92, 246, 1), transparent 10%)`
+        }}
+      /> */}
+
+            {/* Floating particles */}
+            <div className="absolute inset-0 pointer-events-none">
+                {[...Array(20)].map((_, i) => (
+                    <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-yellow-400 rounded-full animate-pulse"
+                        style={{
+                            left: `${Math.random() * 100}%`,
+                            top: `${Math.random() * 100}%`,
+                            animationDelay: `${Math.random() * 3}s`,
+                            animationDuration: `${2 + Math.random() * 3}s`
+                        }}
+                    />
+                ))}
+            </div>
+
+            <div className="relative z-10 mx-auto">
+                <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-8 sm:gap-12 max-w-7xl mx-auto">
+
+                    {/* Right - Profile Image */}
+                    <div className={`w-full lg:flex-1 flex justify-center transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                        <div className="relative">
+                            {/* Animated rings */}
+                            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-secondary animate-spin" style={{ animationDuration: '8s' }} />
+                            <div className="absolute inset-2 rounded-full bg-gradient-to-bl from-primary to-secondary animate-spin" style={{ animationDuration: '6s' }} />
+
+                            {/* Image container */}
+                            <div className="relative w-full h-auto max-sm:aspect-[3/4] sm:size-72 lg:size-80 rounded-full !rounded-br-lg sm:m-4 border-4 overflow-hidden border-base-100">
+                                <img src={heroImg} loading="lazy" alt={t('hero.first-name')} className="max-sm:w-full h-full object-cover mx-auto" />
+                            </div>
+
+                            {/* Floating badges */}
+                            <div className="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 p-2 sm:p-3 bg-gradient-to-br from-primary/50 to-secondary/80 rounded-lg shadow-lg animate-bounce" style={{ animationDuration: '3s' }}>
+                                <Palette className="w-5 h-5 sm:w-8 sm:h-8 text-white" />
+                            </div>
+
+                            <div className="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 p-2 sm:p-3 bg-gradient-to-br from-secondary to-primary rounded-lg shadow-lg animate-bounce" style={{ animationDuration: '3s', animationDelay: '1s' }}>
+                                <Code2 className="w-5 h-5 sm:w-8 sm:h-8 text-white" />
+                            </div>
+
+                            {/* Star rating */}
+                            <div className="absolute -bottom-8 sm:-bottom-10 left-1/2 -translate-x-1/2 flex gap-1">
+                                {[...Array(5)].map((_, i) => (
+                                    <div key={i} className="w-4 h-4 sm:w-6 sm:h-6 bg-yellow-400 rounded-sm rotate-45" />
+                                ))}
                             </div>
                         </div>
-                        <div className="grow md:grow-0 w-60 md:w-80 flex flex-col items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                            <div className="rounded-full p-2 bg-gradient-to-tr from-[#fc466b] to-[#3f5efb] w-full">
-                                <div className="rounded-full overflow-hidden bg-base-300">
-                                    <img src={heroImg} loading="lazy" alt="" className="w-full h-full object-cover" />
-                                </div>
-                            </div>
-                            <div className="rating">
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-400 sm:size-16" />
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-400 sm:size-16" />
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-400 sm:size-16" />
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-400 sm:size-16" />
-                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-yellow-400 sm:size-16" />
+                    </div>
+
+                    {/* Left Content */}
+                    <div className={`flex-1 space-y-6 sm:space-y-0 transition-all text-start duration-1000 text-center ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+
+                        {/* Greeting Badge */}
+                        <div className="inline-flex mt-1 max-lg:mt-4 items-center gap-2 px-4 py-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full">
+                            <Sparkles className="w-4 h-4 text-primary" />
+                            <span className="text-base-content font-medium">{t('hero.greeting')}</span>
+                        </div>
+
+                        {/* Name */}
+                        <div>
+                            <h1 className="text-4xl whitespace-nowrap sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary m-0 mb-2">
+                                {t('hero.first-name')}
+                                <span className="block lg:inline-block sm:text-4xl lg:text-4xl xl:text-5xl bg-gradient-to-l rtl:bg-gradient-to-r from-secondary to-primary bg-clip-text text-transparent">
+                                    {t('hero.last-name')}
+                                </span>
+                            </h1>
+                        </div>
+
+                        {/* Animated Role */}
+                        <div className="h-10 sm:h-12 flex items-center justify-center lg:justify-start">
+                            <div className="flex items-center gap-2 sm:gap-3 whitespace-nowrap sm:text-xl lg:text-2xl text-base-content">
+                                <Code2 className="w-5 h-5 sm:w-6 sm:h-6" />
+                                <span key={currentRole} className="animate-pulse">
+                                    {roles[currentRole]}
+                                </span>
                             </div>
                         </div>
+
+                        {/* Contact Info */}
+                        <div className="space-y-3">
+                            <a
+                                href={`mailto:${t('hero.contact.email')}`}
+                                className="flex items-center gap-3 text-base-content hover:text-primary transition-colors group justify-start"
+                            >
+                                <div className="p-2 bg-base-100/50 rounded-lg group-hover:bg-primary/20 transition-colors">
+                                    <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
+                                </div>
+                                <span className="text-sm sm:text-base" dir="ltr">{t('hero.contact.email')}</span>
+                            </a>
+
+                            <a
+                                href={`tel:${t('hero.contact.phone')}`}
+                                className="flex items-center gap-3 text-base-content hover:text-primary transition-colors group justify-start"
+                            >
+                                <div className="p-2 bg-base-100/50 rounded-lg group-hover:bg-primary/20 transition-colors">
+                                    <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
+                                </div>
+                                <span className="text-sm sm:text-base" dir="ltr">{t('hero.contact.phone')}</span>
+                            </a>
+
+                            <a
+                                href="https://www.google.com/maps?q=Mashhad,Iran"
+                                className="flex items-center gap-3 text-base-content hover:text-primary transition-colors group justify-start"
+                            >
+                                <div className="p-2 bg-base-100/50 rounded-lg group-hover:bg-primary/20 transition-colors">
+                                    <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
+                                </div>
+                                <span className="text-sm sm:text-base">{t('hero.contact.location')}</span>
+                            </a>
+                        </div>
+
+                        {/* Action Buttons */}
+                        <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4 justify-center lg:justify-start">
+                            <a href='resume.pdf' className="px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-primary to-secondary text-primary-content rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
+                                <Download className="w-4 h-4 sm:w-5 sm:h-5" />
+                                {t("information.download_button")}
+                            </a>
+                            <button className="px-5 sm:px-6 py-2.5 sm:py-3 bg-primary/50 backdrop-blur-sm text-primary-content rounded-lg font-semibold border border-primary hover:border-primary transition-all hover:scale-105 text-sm sm:text-base">
+                                {t('header.portfolios')}
+                            </button>
+                        </div>
+
+                        {/* Social Links */}
+                        <div className="flex gap-3 pt-4 justify-center lg:justify-start">
+                            <a
+                                href="https://github.com/abolraj"
+                                className="p-2.5 sm:p-3 bg-base-100/50 backdrop-blur-sm rounded-lg hover:bg-primary/20 transition-all hover:scale-110 group"
+                            >
+                                <Github className="w-5 h-5 sm:w-6 sm:h-6 text-base-content group-hover:text-primary-400" />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/abolfazl-rajaee-nasab-195aa3225"
+                                className="p-2.5 sm:p-3 bg-base-100/50 backdrop-blur-sm rounded-lg hover:bg-primary/20 transition-all hover:scale-110 group"
+                            >
+                                <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-base-content group-hover:text-primary-400" />
+                            </a>
+                            <a
+                                href="https://t.me/abol_web"
+                                className="p-2.5 sm:p-3 bg-base-100/50 backdrop-blur-sm rounded-lg hover:bg-primary/20 transition-all hover:scale-110 group"
+                            >
+                                <Send className="w-5 h-5 sm:w-6 sm:h-6 text-base-content group-hover:text-primary-400" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Scroll indicator */}
+                <div className="absolute bottom-0 sm:bottom-0 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block">
+                    <div className="w-5 h-8 tooltip sm:w-6 sm:h-10 border-2 border-primary rounded-full flex justify-center" data-tip={t("common.scroll_down")}>
+                        <div className="w-1 h-2 sm:h-3 bg-primary rounded-full mt-2 animate-pulse" />
                     </div>
                 </div>
             </div>
