@@ -1,4 +1,10 @@
 export default {
+    "common": {
+        "scroll_down": "Scroll Down",
+    },
+    "header": {
+        "portfolios": "Portfolios",
+    },
     "certifications": {
         "title": "Certifications",
         "categories": {

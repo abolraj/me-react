@@ -1,4 +1,10 @@
 export default {
+    "common": {
+        "scroll_down": "اسکرول کنید",
+    },
+    "header": {
+        "portfolios": "نمونه کار ها",
+    },
     "certifications": {
         "title": "گواهینامه‌ها",
         "categories": {
@@ -116,7 +122,7 @@ export default {
     "hero": {
         "greeting": "سلام، منم",
         "first-name": "ابوالفضل",
-        "last-name": "رجایی نسب",
+        "last-name": "رجائی نسب",
         "role": "توسعه‌دهنده فول‌استک وب [بک‌اند پیشرفته]",
         "contact": {
             "email": "fazlabol18@gmail.com",

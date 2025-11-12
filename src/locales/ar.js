@@ -1,4 +1,10 @@
 export default {
+    "common": {
+        "scroll_down": "ُScroll Down",
+    },
+    "header": {
+        "portfolios": "المحفظة",
+    },
     "certifications": {
         "title": "الشهادات",
         "categories": {
