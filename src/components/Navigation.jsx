@@ -51,7 +51,7 @@ export default function Navigation({ ...props }) {
                 <Menu className="size-full p-2 md:p-4 transition-opacity left-0 top-0 absolute group-data-[showed-menu=1]:opacity-0" />
                 <X className="size-full max-sm:p-2 md:p-4 transition-opacit left-0 top-0 absolute opacity-0 group-data-[showed-menu=1]:opacity-100" />
             </button>
-            <ul tabIndex="0" className="max-lg:absolute max-lg:backdrop-blur-md max-lg:bg-base-300/40 max-lg:h-0 transition-[height,opacity] max-lg:group-data-[showed-menu=0]:opacity-0 max-lg:group-data-[showed-menu=1]:h-[max(60vh,20rem)] max-lg:top-16 z-0 left-0 max-lg:w-screen  flex-nowrap overflow-x-auto max-lg:flex-col max-lg:items-start flex justify-around gap-2 max-lg:p-3 overflow-hidden max-lg:overflow-auto rounded-b-box">
+            <ul tabIndex="0" className="max-lg:absolute max-lg:backdrop-blur-md max-lg:bg-base-300/40 max-lg:h-0 border-black max-lg:border-b max-lg:shadow-md transition-[height,opacity] max-lg:group-data-[showed-menu=0]:opacity-0 max-lg:group-data-[showed-menu=1]:h-[max(60vh,20rem)] max-lg:top-16 z-0 left-0 max-lg:w-screen  flex-nowrap overflow-x-auto max-lg:flex-col max-lg:items-start flex justify-around gap-2 max-lg:p-3 overflow-hidden max-lg:overflow-auto rounded-b-box">
                 {navItems.map((item, index) => (
                     <li key={index} className={`${item.label === t("navigation.items.0.label") ? 'active' : ''}`}>
                         <a className="text-base-content max-lg:ps-2 text-2xl lg:text-lg  p-1" href={item.href}>
