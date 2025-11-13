@@ -73,6 +73,7 @@ src/
 ![Tailwind CSS](<https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white>)
 ![DaisyUI](<https://img.shields.io/badge/DaisyUI-FF7B5C?style=for-the-badge&logo=daisyui&logoColor=white>)
 ![FontAwesome](<https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=font-awesome&logoColor=white>)
+![Motion](<https://img.shields.io/badge/framer_motion-ffca28?style=for-the-badge&logo=framer&logoColor=%23ffffff&color=%237178f6>)
 ![AOS](<https://img.shields.io/badge/AOS-FF5733?style=for-the-badge&logo=aos&logoColor=white>)
 ![Flickity](<https://img.shields.io/badge/Flickity-FF61D1?style=for-the-badge&logo=flickity&logoColor=white>)
 ![Isotope](<https://img.shields.io/badge/Isotope-990099?style=for-the-badge&logo=isotope&logoColor=white>)
