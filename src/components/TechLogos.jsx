@@ -1,5 +1,5 @@
 import { useRef, useState } from 'react';
-import { motion, useInView, useMotionValue, useSpring } from 'framer-motion';
+import { motion, useInView, useMotionValue, useSpring } from 'motion/react';
 import { distance } from '@popmotion/popcorn';
 
 import laravelLogo from '@assets/svg/techs/laravel.svg';
