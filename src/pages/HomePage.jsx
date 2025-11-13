@@ -9,6 +9,7 @@ import Pricing from "@components/Pricing";
 import Contact from "@components/Contact";
 import Reviews from "@components/Reviews";
 import MainLayout from "@/layouts/MainLayout";
+import TechLogos from "@/components/TechLogos";
 
 export default function HomePage({
 
@@ -16,6 +17,7 @@ export default function HomePage({
     return (
         <MainLayout>
             <Hero></Hero>
+            <TechLogos></TechLogos>
             <Information></Information>
             <Services></Services>
             <Skills></Skills>
