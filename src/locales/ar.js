@@ -167,17 +167,15 @@ export default {
         "download_button": "تحميل السيرة الذاتية"
     },
     "navigation": {
-        "items": [
-            { "label": "الرئيسية", "href": "#home" },
-            { "label": "معلومات عني", "href": "#about" },
-            { "label": "المهارات", "href": "#skills" },
-            { "label": "الخبرات", "href": "#experience" },
-            { "label": "الشهادات", "href": "#certifications" },
-            { "label": "المحفظة", "href": "#portfolio" },
-            { "label": "التسعير", "href": "#pricing" },
-            { "label": "التقييمات", "href": "#reviews" },
-            { "label": "اتصل بي", "href": "#contact" }
-        ]
+        "home": "الرئيسية",
+        "about": "عن",
+        "skills": "المهارات",
+        "experiences": "الخبرات",
+        "certifications": "الشهادات",
+        "portfolio": "المحفظة",
+        "pricing": "التسعير",
+        "reviews": "نظرات",
+        "contact": "اتصل"
     },
     "portfolios": {
         "title": "المحفظة الحديثة",
@@ -376,7 +374,21 @@ export default {
         ]
     },
     "footer": {
-        "text": "2025 ©️ تم التطوير والتصميم ب ❤️ بواسطتي"
+        "text": "2025 ©️ تم التطوير والتصميم ب ❤️ بواسطتي",
+        "services": "الخدمات",
+        "fullstack_web_development": "تطوير ويب كامل",
+        "backend_web_development": "تطوير الواجهة الخلفية",
+        "frontend_web_development": "تطوير الواجهة الأمامية",
+        "chatbot_development": "تطوير روبوتات الدردشة",
+        "contact": "اتصل بنا",
+        "certifications": "الشهادات",
+        "laravel_cert": "شهادة لارافيل",
+        "react_cert": "شهادة رياكت جي إس",
+        "php_cert": "شهادة بي إتش بي",
+        "db_cert": "شهادة قاعدة البيانات",
+        "blog": "المدونة",
+        "wanna_grow": "هل تنوم ?!"
+
     },
     "error": {
         "page_not_found": "الصفحة غير موجودة",

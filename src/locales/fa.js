@@ -167,17 +167,15 @@ export default {
         "download_button": "دانلود رزومه"
     },
     "navigation": {
-        "items": [
-            { "label": "خانه", "href": "#home" },
-            { "label": "درباره من", "href": "#about" },
-            { "label": "مهارت‌ها", "href": "#skills" },
-            { "label": "تجربیات", "href": "#experience" },
-            { "label": "گواهینامه‌ها", "href": "#certifications" },
-            { "label": "نمونه کارها", "href": "#portfolio" },
-            { "label": "تعرفه‌ها", "href": "#pricing" },
-            { "label": "نظرات", "href": "#reviews" },
-            { "label": "تماس", "href": "#contact" }
-        ]
+        "home": "خانه",
+        "about": "درباره",
+        "skills": "مهارت‌ها",
+        "experiences": "تجربیات",
+        "certifications": "گواهینامه‌ها",
+        "portfolio": "نمونه کارها",
+        "pricing": "تعرفه",
+        "reviews": "نظرات",
+        "contact": "تماس"
     },
     "portfolios": {
         "title": "نمونه کارهای اخیر",
@@ -376,7 +374,21 @@ export default {
         ]
     },
     "footer": {
-        "text": "2025 ©️ توسعه و طراحی شده با ❤️ توسط من"
+        "text": "2025 ©️ توسعه و طراحی شده با ❤️ توسط من",
+        "services": "خدمات",
+        "fullstack_web_development": "توسعه وب فول‌استک",
+        "backend_web_development": "توسعه بک‌اند وب",
+        "frontend_web_development": "توسعه فرانت‌اند وب",
+        "chatbot_development": "توسعه چت‌بات",
+        "contact": "تماس با ما",
+        "certifications": "گواهینامه‌ها",
+        "laravel_cert": "گواهینامه لاراول",
+        "react_cert": "گواهینامه ری‌اکت جی‌اس",
+        "php_cert": "گواهینامه پی‌اچ‌پی",
+        "db_cert": "گواهینامه پایگاه داده",
+        "blog": "بلاگ",
+        "wanna_grow": "میخوای بری بالا ?!"
+
     },
     "error": {
         "page_not_found": "صفحه یافت نشد",

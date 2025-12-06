@@ -167,17 +167,15 @@ export default {
         "download_button": "Download CV"
     },
     "navigation": {
-        "items": [
-            { "label": "Home", "href": "#home" },
-            { "label": "About", "href": "#about" },
-            { "label": "Skills", "href": "#skills" },
-            { "label": "Experiences", "href": "#experience" },
-            { "label": "Certifications", "href": "#certifications" },
-            { "label": "Portfolio", "href": "#portfolio" },
-            { "label": "Pricing", "href": "#pricing" },
-            { "label": "Rates", "href": "#reviews" },
-            { "label": "Contact", "href": "#contact" }
-        ]
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "experiences": "Experiences",
+        "certifications": "Certifications",
+        "portfolio": "Portfolio",
+        "pricing": "Pricing",
+        "reviews": "Reviews",
+        "contact": "Contact"
     },
     "portfolios": {
         "title": "Recent Portfolio",
@@ -377,7 +375,20 @@ export default {
         ]
     },
     "footer": {
-        "text": "2025 ©️ Developed and designed with ❤️ by me"
+        "text": "2025 ©️ Developed and designed with ❤️ by me",
+        "services": "Services",
+        "fullstack_web_development": "Full-stack web development",
+        "backend_web_development": "Back-end web development",
+        "frontend_web_development": "Front-end web development",
+        "chatbot_development": "Chat bots development",
+        "contact": "Contact Us",
+        "certifications": "Certifications",
+        "laravel_cert": "Laravel Certification",
+        "react_cert": "React Js Certification",
+        "php_cert": "PHP Certification",
+        "db_cert": "Database Certification",
+        "blog": "Blog",
+        "wanna_grow": "Wanna Grow ?!"
     },
     "error": {
         "page_not_found": "Page Not Found",
