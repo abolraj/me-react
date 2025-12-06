@@ -24,7 +24,7 @@ export default function Contact() {
     };
 
     return (
-        <section className="font-sans sm:p-4 text-base-content pt-12 lg:pt-24" id="contact" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+        <section className="font-sans sm:p-4 text-base-content" id="contact" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
             <div className="max-w-6xl mx-auto relative bg-base-100 shadow-lg rounded-3xl overflow-hidden">
                 <div className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full bg-primary"></div>
                 <div className="absolute -top-6 -right-9 sm:-right-6 w-20 h-20 rounded-full bg-primary"></div>
