@@ -6,7 +6,7 @@ export default function MainLayout({
 }) {
 
     return (
-        <div className="p-2 overflow-hidden">
+        <div className="overflow-hidden">
             <Header />
             <main className="text-base-300 box-border pt-12 px-4 md:px-6 sm:pt-20">
                 {children}
