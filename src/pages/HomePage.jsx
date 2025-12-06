@@ -10,6 +10,7 @@ import Contact from "@components/Contact";
 import Reviews from "@components/Reviews";
 import MainLayout from "@/layouts/MainLayout";
 import TechLogos from "@/components/TechLogos";
+import AbolScrollbar from "@/components/AbolScrollbar";
 
 export default function HomePage({
 
@@ -26,7 +27,7 @@ export default function HomePage({
             <Portfolios></Portfolios>
             <Pricing></Pricing>
             <Reviews></Reviews>
-            <Contact></Contact>
+            <AbolScrollbar></AbolScrollbar>
         </MainLayout>
     )
 }
