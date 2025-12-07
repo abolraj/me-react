@@ -34,7 +34,7 @@ const AbolScrollbar = () => {
                     <motion.span style={{
                         writingMode: 'vertical-rl',
                         textOrientation: 'upright',
-                        letterSpacing:-4,
+                        letterSpacing:-5,
                         fontFamily: 'sans-serif',
                     }}>
                         {useTransform(scrollPercentage, v => v)}
