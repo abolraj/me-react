@@ -5,22 +5,22 @@ const AbolScrollbar = () => {
     const { scrollYProgress } = useScroll();
     const [isVisible, setIsVisible] = useState(false);
 
-    const scrollPercentage = (scrollYProgress);
+    const scrollPercentage = useTransform(scrollYProgress, v => parseInt(v*100));
 
     return (
         <motion.div
             className="fixed left-0 top-1/2 -translate-y-1/2  z-50 pointer-events-none"
             style={{
-                display: useTransform(scrollPercentage, v => parseInt(v*100) >= 10 && parseInt(v*100) <= 95 ? 'block' : 'none'),
+                display: useTransform(scrollPercentage, v => v >= 10 && v <= 95 ? 'block' : 'none'),
             }}
         >
             {/* Scroll track */}
-            <div className="relative h-[50dvh] w-3">
+            <div className="relative h-[100svh] w-1">
                 {/* Gradient track */}
-                <div className="absolute inset-0 rounded-full overflow-hidden">
+                <div className="absolute inset-0 overflow-hidden">
                     <motion.div className='w-full h-full origin-top bg-gradient-to-b from-primary to-secondary/20'
                         style={{
-                            scaleY: scrollPercentage,
+                            scaleY: scrollYProgress,
                         }}
                     >
                     </motion.div>
@@ -29,15 +29,15 @@ const AbolScrollbar = () => {
 
                 {/* Current percentage indicator */}
                 <div
-                    className="absolute top-0 -left-2 text-center text-lg font-bold text-primary-content whitespace-nowrap pointer-events-auto"
+                    className="absolute top-16 lg:top-20 -left-1 text-center text-lg font-bold text-primary whitespace-nowrap pointer-events-auto"
                 >
                     <motion.span style={{
                         writingMode: 'vertical-rl',
                         textOrientation: 'upright',
-                        letterSpacing:-5,
-                        fontFamily: 'cursive'
+                        letterSpacing:-4,
+                        fontFamily: 'sans-serif',
                     }}>
-                        {useTransform(() => parseInt(Math.round(scrollPercentage.get() * 100)))}
+                        {useTransform(scrollPercentage, v => v)}
                     </motion.span>
                 </div>
             </div>
