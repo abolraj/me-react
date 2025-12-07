@@ -18,6 +18,8 @@ import { useTranslation } from 'react-i18next'; // Import useTranslation
 export default function Navigation({ ...props }) {
     const { t } = useTranslation(); // Initialize the t() function
     const [isShowedMenu, setIsShowedMenu] = useState(false);
+    const currentUrl = window.location.toString();
+    const [activeNavIndex, setActiveNavIndex] = useState(-1);
 
     const navItems = [
         { icon: faMugHot, label: t("navigation.home"), href: '/#home' },
@@ -27,7 +29,7 @@ export default function Navigation({ ...props }) {
         { icon: faAward, label: t("navigation.certifications"), href: '/#certifications' },
         { icon: faCodeBranch, label: t("navigation.portfolio"), href: '/#portfolio' },
         { icon: faDollarSign, label: t("navigation.pricing"), href: '/#pricing' },
-        { icon: faStar, label: t("navigation.reviews"), href: '/#reviews' },
+        { icon: faStar, label: t("navigation.reviews"), href: '/reviews' },
         { icon: faAt, label: t("navigation.contact"), href: '/contact' },
     ];
 
@@ -55,9 +57,19 @@ export default function Navigation({ ...props }) {
             <ul tabIndex="0" className="max-lg:absolute max-lg:backdrop-blur-md max-lg:bg-base-300/40 max-lg:h-0 border-black max-lg:border-b max-lg:shadow-md transition-[height,opacity] max-lg:group-data-[showed-menu=0]:opacity-0 max-lg:group-data-[showed-menu=1]:h-[max(60vh,20rem)] max-lg:top-16 z-0 left-0 max-lg:w-screen  flex-nowrap overflow-x-auto max-lg:flex-col max-lg:items-start flex justify-around gap-2 max-lg:p-3 overflow-hidden max-lg:overflow-auto rounded-b-box">
                 {navItems.map((item, index) => (
                     <li key={index} className={`${item.label === t("navigation.items.0.label") ? 'active' : ''}`}>
-                        <Link className="text-base-content max-lg:ps-2 text-2xl lg:text-lg  p-1" to={item.href}>
+                        <Link className="text-base-content max-lg:ps-2 text-2xl lg:text-lg p-1 data-[active=1]:underline"
+                            activeProps={{
+                                style: { textDecorationLine: 'underline' }
+                            }}
+                            activeOptions={{
+                                includeHash: true,
+                            }}
+                            to={item.href}
+                            onClick={() => setActiveNavIndex(index)}
+                            data-active={+(index === activeNavIndex)}
+                        >
                             <FontAwesomeIcon icon={item.icon} className="lg:hidden w-5 text-primary" />
-                            &nbsp;
+                            <span className="lg:hidden">&nbsp;</span>
                             {item.label}
                         </Link>
                     </li>
