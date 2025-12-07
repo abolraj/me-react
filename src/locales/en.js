@@ -1,6 +1,7 @@
 export default {
     "common": {
         "scroll_down": "Scroll Down",
+        "all": "All",
     },
     "header": {
         "portfolios": "Portfolios",
@@ -290,42 +291,53 @@ export default {
     },
     "reviews": {
         "title": "Client Reviews",
+        "review": "Review",
+        "recently": "Recently",
+        "helpful": "Helpful",
+        "verified_review": "Verified Review",
+        "most_helpful": "Most Helpful",
         "items": [
             {
                 "rating": 5,
                 "text": "It was a very good collaboration. Precision in the work process, punctuality in delivery, and support after the completion of the work are three important characteristics that make me hopeful for future collaborations with him.",
                 "name": "Behzad Alavi",
-                "title": "Art College Stu. at Austria"
+                "date": "2022/10/20",
+                "title": "Art College Stu. at Austria",
             },
             {
                 "rating": 5,
                 "text": "Completely professional and fast performance. I will definitely consult him for future projects.",
                 "name": "Exoplanetor",
-                "title": "Ponisha"
+                "date": "2022/10/22",
+                "title": "Ponisha",
             },
             {
                 "rating": 5,
                 "text": "This is the third project we have done with him. He knows his work very well and has implemented all the project requirements. I wish him increasing success every day.",
                 "name": "Hatam",
-                "title": "Martial Art Researcher"
+                "date": "2023/3/23",
+                "title": "Martial Art Researcher",
             },
             {
                 "rating": 5,
                 "text": "They delivered very quickly. The code was excellent and well-written. High proficiency in their work.",
                 "name": "Perkas",
-                "title": "Autoplay Carousel"
+                "date": "2024/10/2",
+                "title": "Autoplay Carousel",
             },
             {
                 "rating": 5,
                 "text": "This is the second project I've done with him, and I am completely satisfied with the collaboration.",
                 "name": "Hatam",
-                "title": "Martial Art Researcher"
+                "date": "2020/5/10",
+                "title": "Martial Art Researcher",
             },
             {
                 "rating": 5,
                 "text": "I would like to thank the team for their efforts on the project. They showed utmost dedication and collaboration. I will definitely work with this excellent team again.",
                 "name": "Hatam",
-                "title": "Martial Art Researcher"
+                "date": "2025/3/13",
+                "title": "Martial Art Researcher",
             }
         ]
     },
