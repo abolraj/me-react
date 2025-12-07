@@ -44,10 +44,10 @@ export default function Footer({ ...props }) {
             <div className="sm:pr-10 mx-auto">
                 <img src={bannerImg} alt="logo" />
             </div>
-            <div className='grow rtl:-order-1'>
+            <div className='grow sm:rtl:-order-1'>
                 <ul className='flex flex-wrap gap-4 text-start justify-between'>
                     {navs.map(nav => (
-                        <li>
+                        <li className={`${nav?.subnavs && 'max-sm:w-full'}`}>
                             <h2 className='text-xl'>
                                 <a href={nav.href} className='link link-hover text-base-content'>{nav.label}</a>
                             </h2>
