@@ -30,7 +30,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="relative min-h-screen container p-2  max-lg:pt-10" id="home">
+        <section className="relative min-h-screen container p-2 max-lg:pt-10 scroll-mt-40" id="home">
             {/* Animated background gradient */}
             {/* <div 
         className="absolute inset-0 opacity-30 pointer-events-none"
