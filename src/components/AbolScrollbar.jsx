@@ -15,7 +15,7 @@ const AbolScrollbar = () => {
             }}
         >
             {/* Scroll track */}
-            <div className="relative h-[100svh] w-1">
+            <div className="relative h-[100dvh] w-[6px] lg:w-1">
                 {/* Gradient track */}
                 <div className="absolute inset-0 overflow-hidden">
                     <motion.div className='w-full h-full origin-top bg-gradient-to-b from-primary to-secondary/20'
