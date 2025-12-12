@@ -37,7 +37,7 @@ export default function Skills({ ...props }) {
     }, []);
 
     return (
-        <section id="skills" className="py-12 pt-12 lg:pt-24 text-base-content">
+        <section id="skills" className="py-12 pt-12 lg:pt-24 text-base-content scroll-m-14">
             <div className="container mx-auto sm:px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold">
