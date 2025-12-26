@@ -108,10 +108,10 @@ export default function Hero() {
                         </div>
 
                         {/* Animated Role */}
-                        <div className="h-10 sm:h-12 flex items-center justify-center lg:justify-start">
-                            <div className="flex items-center gap-2 sm:gap-3 whitespace-nowrap sm:text-xl lg:text-2xl text-base-content">
+                        <div className="flex items-center justify-center lg:justify-start w-full">
+                            <div className="flex flex-wrap items-center gap-2 sm:gap-3 whitespace-nowrap sm:text-xl lg:text-2xl text-base-content">
                                 <Code2 className="w-5 h-5 sm:w-6 sm:h-6" />
-                                <span key={currentRole} className="animate-pulse">
+                                <span key={currentRole} className="animate-pulse shrink">
                                     {roles[currentRole]}
                                 </span>
                             </div>
