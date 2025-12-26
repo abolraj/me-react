@@ -1,3 +1,4 @@
+import Certifications from "@/components/Certifications";
 import MainLayout from "@/layouts/MainLayout";
 
 export default function CertificationPage ({
@@ -5,9 +6,7 @@ export default function CertificationPage ({
 }) {
     return (
         <MainLayout>
-            <p className="text-base-content text-8xl mt-10">
-            Under Deveopment ... ⚒️😅
-            </p>
+            <Certifications/>
         </MainLayout>
     )
 }
