@@ -1,3 +1,4 @@
+import Portfolios from "@/components/Portfolios";
 import MainLayout from "@/layouts/MainLayout";
 
 export default function PortfoliosPage ({
@@ -5,9 +6,7 @@ export default function PortfoliosPage ({
 }) {
     return (
         <MainLayout>
-            <p className="text-base-content text-8xl mt-10">
-            Under Deveopment ... ⚒️😅
-            </p>
+            <Portfolios/>
         </MainLayout>
     )
 }
