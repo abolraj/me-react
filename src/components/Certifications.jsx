@@ -10,11 +10,36 @@ import certificateSEO from '@assets/certifications/certificate_seo.webp';
 import certificateReact from '@assets/certifications/certificate_react.webp';
 import certificateResponsiveDesign from '@assets/certifications/certificate_responsive_design.webp';
 import certificateTypescript from '@assets/certifications/certificate_typescript.webp';
+import Certification from './Certification';
 
 export default function Certifications({ ...props }) {
     const { t } = useTranslation(); // Initialize useTranslation
     const [selectedFilter, setSelectedFilter] = useState("*");
+    const [loadedImages, setLoadedImages] = useState(false);
     const isotope = useRef();
+
+    const isLoadedImages = () => {
+        if (loadedImages) return true;
+
+        const isLoaded = document.querySelectorAll('.grid-item img').values().some(i => i.complete)
+
+        setLoadedImages(isLoaded)
+        return isLoaded
+    }
+
+    const renderIsotope = () => {
+        isotope.current.arrange({ filter: selectedFilter });
+    }
+
+    const checkLayoutRendering = () => {
+        if (isLoadedImages()) {
+            renderIsotope()
+        }else{
+            setTimeout(()=>{
+                checkLayoutRendering()
+            }, 100)
+        }
+    }
 
     useEffect(() => {
         isotope.current = new Isotope('.certificationContainer', {
@@ -22,15 +47,7 @@ export default function Certifications({ ...props }) {
             layoutMode: 'fitRows',
         });
 
-        const projectGallery = document.querySelector("#certifications-gallery")
-        document.addEventListener("scroll", function (e) {
-            if (projectGallery.getBoundingClientRect().bottom <= window.innerHeight && !projectGallery.classList.contains('started-animation-in-scroll')) {
-                projectGallery.classList.add('started-animation-in-scroll');
-                setTimeout(()=>{
-                    isotope.current.arrange({ filter: selectedFilter });
-                },200)
-            }
-        });
+        checkLayoutRendering()
 
         return () => isotope.current.destroy();
     }, []);
@@ -144,23 +161,7 @@ export default function Certifications({ ...props }) {
                     data-aos-delay="500"
                 >
                     {certifications.map((cert, index) => (
-                        <div key={index} className={`grid-item w-full sm:w-1/2 md:w-1/3 ${cert.category} relative`}>
-                            <figure className="aspect-video bg-base-100 my-2 sm:p-4 sm:m-4 rounded-lg shadow-lg relative">
-                                <img
-                                    src={cert.imgSrc}
-                                    alt={cert.title}
-                                    className="lazy w-full h-auto rounded-lg object-cover"
-                                />
-                                <figcaption
-                                    className="cursor-pointer absolute bottom-0 left-0 right-0 bg-opacity-75 bg-gray-800 text-white p-4 rounded-b-lg flex flex-col items-center"
-                                    onClick={() => openModal(cert.modalId)}
-                                >
-                                    <i className="fa fa-search mb-2"></i>
-                                    <h5 className="title text-lg font-bold">{cert.title}</h5>
-                                    <span className="sub-title text-sm">{cert.subTitle}</span>
-                                </figcaption>
-                            </figure>
-                        </div>
+                        <Certification key={index} className={cert.category} data={cert} onClick={() => openModal(cert.modalId)}/>
                     ))}
                 </div>
                 {certifications.map((cert, index) => (
