@@ -11,6 +11,8 @@ import Reviews from "@components/Reviews";
 import MainLayout from "@/layouts/MainLayout";
 import TechLogos from "@/components/TechLogos";
 import AbolScrollbar from "@/components/AbolScrollbar";
+import LatestPortfolios from "@/components/LatestPortfolios";
+import LatestCertifications from "@/components/LatestCertifications";
 
 export default function HomePage({
 
@@ -23,8 +25,8 @@ export default function HomePage({
             <Services></Services>
             <Skills></Skills>
             <Experiences></Experiences>
-            <Certifications></Certifications>
-            <Portfolios></Portfolios>
+            <LatestCertifications></LatestCertifications>
+            <LatestPortfolios></LatestPortfolios>
             <Pricing></Pricing>
             <Reviews></Reviews>
             <AbolScrollbar></AbolScrollbar>
