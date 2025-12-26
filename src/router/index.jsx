@@ -17,4 +17,7 @@ const routeTree = RootRoute.addChildren([
     ContactRoute,
 ])
 
-export const router = createRouter({ routeTree })
+export const router = createRouter({
+    routeTree,
+    scrollRestoration: true,
+})
