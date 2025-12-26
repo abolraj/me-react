@@ -54,13 +54,14 @@ export default function LatestCertifications({ ...props }) {
     return (
         <section id="certifications" className="py-12 pt-12 lg:pt-24 scroll-m-14">
             <div className="container mx-auto px-4 text-base-content">
-                <div className="text-center mb-12 max-md:flex justify-between" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div className="text-center max-md:flex justify-between" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <h3 className="text-2xl md:text-5xl font-extrabold">{t('certifications.title')}</h3>
                     <Link to="/certifications" className="link link-hover text-xl flex gap-2 items-center md:absolute end-3 top-5">
                         {t('common.all')}
                         <ArrowRight className="size-4 rtl:-scale-x-100" />
                     </Link>
                 </div>
+                <hr className='border-base-100 my-5' />
                 <div
                     className="flex flex-wrap"
                     data-aos="fade-up"
