@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Isotope from 'isotope-layout';
 
 import portfolio_medical_products from '@assets/portfolios/portfolio_medical_products.webp';
@@ -11,9 +11,10 @@ import portfolio_todo_13 from '@assets/portfolios/portfolio_todo_13.webp';
 import portfolio_login_bootstrap from '@assets/portfolios/portfolio_login_bootstrap.webp';
 import portfolio_guess_word from '@assets/portfolios/portfolio_guess_word.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBolt, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faBolt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
+import Portfolio from './Portfolio';
 
 const MainTags = Object.freeze({
     LARAVEL: 'Laravel',
@@ -149,30 +150,45 @@ export default function Portfolios(props) {
         }
     ];
     const [selectedFilter, setSelectedFilter] = useState("*");
-    const [isotope, setIsotope] = useState(null);
+    const [loadedImages, setLoadedImages] = useState(false);
+    const isotope = useRef();
+
 
     const handleFilterKeyChange = (key) => {
         setSelectedFilter(key);
-        isotope.arrange({ filter: key });
+        isotope.current.arrange({ filter: key });
     };
 
+    const isLoadedImages = () => {
+        if (loadedImages) return true;
+
+        const isLoaded = document.querySelectorAll('.grid-item img').values().some(i => i.complete)
+
+        setLoadedImages(isLoaded)
+        return isLoaded
+    }
+
+    const renderIsotope = () => {
+        isotope.current.arrange({ filter: selectedFilter });
+    }
+
+    const checkLayoutRendering = () => {
+        if (isLoadedImages()) {
+            renderIsotope()
+        } else {
+            setTimeout(() => {
+                checkLayoutRendering()
+            }, 100)
+        }
+    }
+
     useEffect(() => {
-        const isotopeTemp = new Isotope('.portfolioContainer', {
+        isotope.current = new Isotope('.portfolioContainer', {
             itemSelector: '.grid-item',
             layoutMode: 'masonry'
         })
-        setIsotope(isotopeTemp);
 
-        const projectGallery = document.querySelector("#portfolios-gallery")
-        document.addEventListener("scroll", function (e) {
-            if (projectGallery.getBoundingClientRect().bottom <= window.innerHeight && !projectGallery.classList.contains('started-animation-in-scroll')) {
-                projectGallery.classList.add('started-animation-in-scroll');
-                setTimeout(()=>{
-                    isotopeTemp.arrange({ filter: selectedFilter });
-                },200)
-            }
-        });
-
+        checkLayoutRendering()
     }, []);
 
     const showModal = (id) => {
@@ -180,7 +196,7 @@ export default function Portfolios(props) {
     };
 
     return (
-        <section className="portfolio text-base-content pt-12 lg:pt-24" id="portfolio">
+        <section className="portfolio text-base-content pt-12 lg:pt-24 scroll-mt-10" id="portfolio">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 gap-4 section-separator">
                     <div className="section-title col-span-12" data-aos="fade-up">
@@ -221,18 +237,9 @@ export default function Portfolios(props) {
                         </div>
                         <hr className='horizontal border-primary' />
                         <div className="project-gallery col-span-12" id="portfolios-gallery" data-aos="fade-up">
-                            <div className="portfolioContainer">
-                                {portfolioItems.map((item, index) => ( 
-                                    <div key={index} className={`grid-item w-full sm:w-1/2 md:w-1/3 user-interface ${item.tags.map(tag => tag.toLowerCase().replace(' ', '-')).join(' ')}`} onClick={() => showModal(item.modalId)}>
-                                        <figure className="group relative overflow-hidden h-full m-2 rounded-lg shadow-lg bg-base-100">
-                                            <img src={item.image} alt="portfolio" loading='lazy' className="w-full h-full object-cover transition-[mask-size] [mask-size:100%] group-hover:[mask-size:60%] group-hover:mask group-hover:mask-hexagon-2" />
-                                            <figcaption className="absolute bg-base-300 bg-opacity-0 transition-[background-color] group-hover:bg-opacity-70 top-0 left-0 w-full h-full flex flex-col justify-center items-center fig-caption p-4">
-                                                <FontAwesomeIcon icon={faSearch} className='h-5 transition-transform -translate-y-[500px] group-hover:translate-y-0' />
-                                                <h5 className="title text-lg transition-transform translate-x-[500px] group-hover:translate-x-0">{item.title}</h5>
-                                                <span className="sub-title text-sm text-gray-400 transition-transform -translate-x-[500px] group-hover:translate-x-0 badge p-4 px-6">{item.subTitle}</span>
-                                            </figcaption>
-                                        </figure>
-                                    </div>
+                            <div className="portfolioContainer h-min">
+                                {portfolioItems.map((item, index) => (
+                                    <Portfolio key={index} data={item} onClick={() => showModal(item.modalId)}/>
                                 ))}
                             </div>
                         </div>
