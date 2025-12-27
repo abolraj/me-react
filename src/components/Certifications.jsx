@@ -33,9 +33,11 @@ export default function Certifications({ ...props }) {
 
     const checkLayoutRendering = () => {
         if (isLoadedImages()) {
-            renderIsotope()
-        }else{
-            setTimeout(()=>{
+            setTimeout(() => {
+                renderIsotope()
+            }, 0)
+        } else {
+            setTimeout(() => {
                 checkLayoutRendering()
             }, 100)
         }
@@ -133,7 +135,11 @@ export default function Certifications({ ...props }) {
     return (
         <section id="certifications" className="py-12 pt-12 lg:pt-24 scroll-m-14">
             <div className="container mx-auto px-4 text-base-content">
-                <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                <div className="text-center mb-12"
+                    // data-aos="fade-up"
+                    // data-aos-duration="800"
+                    // data-aos-delay="100"
+                >
                     <h3 className="text-3xl md:text-5xl font-extrabold">{t('certifications.title')}</h3>
                 </div>
                 <div className="flex justify-center mb-6">
@@ -143,10 +149,10 @@ export default function Certifications({ ...props }) {
                                 key={i}
                                 onClick={handleFilterKeyChange(filter)}
                                 className='btn cursor-pointer w-full sm:w-auto text-lg px-4 py-2 rounded-lg bg-primary text-primary-content data-[selected="0"]:btn-outline'
-                                data-aos="fade-up"
+                                // data-aos="fade-up"
                                 data-selected={selectedFilter == filter ? "1" : "0"}
-                                data-aos-duration="800"
-                                data-aos-delay={100 * i}
+                                // data-aos-duration="800"
+                                // data-aos-delay={100 * i}
                             >
                                 {category}
                             </li>
@@ -156,12 +162,12 @@ export default function Certifications({ ...props }) {
                 <div
                     id="certifications-gallery"
                     className="certificationContainer grid gap-0"
-                    data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-delay="500"
+                    // data-aos="fade-up"
+                    // data-aos-duration="800"
+                    // data-aos-delay="500"
                 >
                     {certifications.map((cert, index) => (
-                        <Certification key={index} className={cert.category} data={cert} onClick={() => openModal(cert.modalId)}/>
+                        <Certification key={index} className={cert.category} data={cert} onClick={() => openModal(cert.modalId)} />
                     ))}
                 </div>
                 {certifications.map((cert, index) => (
