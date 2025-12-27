@@ -174,7 +174,9 @@ export default function Portfolios(props) {
 
     const checkLayoutRendering = () => {
         if (isLoadedImages()) {
-            renderIsotope()
+            setTimeout(() => {
+                renderIsotope()
+            }, 0)
         } else {
             setTimeout(() => {
                 checkLayoutRendering()
@@ -199,7 +201,10 @@ export default function Portfolios(props) {
         <section className="portfolio text-base-content pt-12 lg:pt-24 scroll-mt-10" id="portfolio">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 gap-4 section-separator">
-                    <div className="section-title col-span-12" data-aos="fade-up">
+                    <div
+                        className="section-title col-span-12"
+                    // data-aos="fade-up"
+                    >
                         <h3 className="text-3xl md:text-5xl font-bold">{t("portfolios.title")}</h3>
                     </div>
                     <div className="part col-span-12">
@@ -207,7 +212,7 @@ export default function Portfolios(props) {
                             <ul className="flex flex-wrap gap-2 justify-center space-x-4">
                                 <li
                                     className="current grow btn btn-primary cursor-pointer text-lg font-semibold data-[selected=0]:btn-outline"
-                                    data-aos="fade-up"
+                                    // data-aos="fade-up"
                                     data-selected={selectedFilter === "*" ? 1 : 0}
                                     onClick={() => handleFilterKeyChange('*')}
                                 >
@@ -225,8 +230,7 @@ export default function Portfolios(props) {
                                         <option
                                             key={idx}
                                             defaultChecked={`.${tag.toLowerCase().replace(' ', '-')}` === selectedFilter}
-                                            className=""
-                                            data-aos="fade-up"
+                                            // data-aos="fade-up"
                                             value={`.${tag.toLowerCase().replace(' ', '-')}`}
                                         >
                                             {tag}
@@ -236,10 +240,13 @@ export default function Portfolios(props) {
                             </ul>
                         </div>
                         <hr className='horizontal border-primary' />
-                        <div className="project-gallery col-span-12" id="portfolios-gallery" data-aos="fade-up">
+                        <div className="project-gallery col-span-12"
+                            id="portfolios-gallery"
+                            // data-aos="fade-up"
+                        >
                             <div className="portfolioContainer h-min">
                                 {portfolioItems.map((item, index) => (
-                                    <Portfolio key={index} data={item} onClick={() => showModal(item.modalId)}/>
+                                    <Portfolio key={index} data={item} onClick={() => showModal(item.modalId)} />
                                 ))}
                             </div>
                         </div>
