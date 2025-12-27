@@ -1,5 +1,4 @@
 import Review from "@/components/Review";
-import MainLayout from "@/layouts/MainLayout";
 import { CircleUser, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -20,7 +19,7 @@ export default function ReviewsPage({
 
 
     return (
-        <MainLayout>
+        <>
             <section className="testimonial text-base-content pt-12 lg:pt-24 w-full p-4 max-sm:px-0" id="reviews">
                 <div className="home-v-img">
                     <div className="container">
@@ -46,6 +45,6 @@ export default function ReviewsPage({
                     </div>
                 </div>
             </section>
-        </MainLayout>
+        </>
     )
 }

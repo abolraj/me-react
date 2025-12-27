@@ -8,7 +8,6 @@ import Portfolios from "@components/Portfolios";
 import Pricing from "@components/Pricing";
 import Contact from "@components/Contact";
 import Reviews from "@components/Reviews";
-import MainLayout from "@/layouts/MainLayout";
 import TechLogos from "@/components/TechLogos";
 import AbolScrollbar from "@/components/AbolScrollbar";
 import LatestPortfolios from "@/components/LatestPortfolios";
@@ -18,7 +17,7 @@ export default function HomePage({
 
 }) {
     return (
-        <MainLayout>
+        <>
             <Hero></Hero>
             <TechLogos></TechLogos>
             <Information></Information>
@@ -30,6 +29,6 @@ export default function HomePage({
             <Pricing></Pricing>
             <Reviews></Reviews>
             <AbolScrollbar></AbolScrollbar>
-        </MainLayout>
+        </>
     )
 }
