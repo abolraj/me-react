@@ -17,6 +17,16 @@ const routeTree = RootRoute.addChildren([
     ContactRoute,
 ])
 
+// We can add another new layout and its routes here
+// Every pages does not need to childed with Layout component 
+// cause of it handled in render component of the main Router (of that layout)
+// 
+// const dashboardRouteTree = DashboardRoute.addChildren([
+//     HomeRoute,
+//     AnaliticsRoute,
+//     ...
+// ])
+
 export const router = createRouter({
     routeTree,
     scrollRestoration: true,
