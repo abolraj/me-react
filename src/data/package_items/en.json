@@ -1,0 +1,1921 @@
+[
+    {
+        "slug": "personal-starter",
+        "package_slug": "personal",
+        "name": "Starter",
+        "description": "Basic personal portfolio with landing page and essential contact information",
+        "scale": 0.8,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": false,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "personal-basic",
+        "package_slug": "personal",
+        "name": "Basic",
+        "description": "Enhanced personal website with multiple pages showcasing work and achievements",
+        "scale": 1.0,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "themes-light-dark",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "personal-professional",
+        "package_slug": "personal",
+        "name": "Professional",
+        "description": "Premium personal website with advanced features, blog, and full portfolio management",
+        "scale": 1.3,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "blog",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "custom-themes",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "e-commerce-starter",
+        "package_slug": "e-commerce",
+        "name": "Starter",
+        "description": "Simple online store with basic product listing and checkout functionality",
+        "scale": 1.2,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "e-commerce-basic",
+        "package_slug": "e-commerce",
+        "name": "Basic",
+        "description": "Standard e-commerce solution with inventory management and multiple payment options",
+        "scale": 1.5,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "e-commerce-professional",
+        "package_slug": "e-commerce",
+        "name": "Professional",
+        "description": "Complete e-commerce platform with advanced features, analytics, and multi-vendor support",
+        "scale": 2.0,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "shipping-logistics",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "review-rating-system",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "performance-opt",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "cms-starter",
+        "package_slug": "cms",
+        "name": "Starter",
+        "description": "Basic content management system for small websites with simple content editing",
+        "scale": 1.0,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "cms-basic",
+        "package_slug": "cms",
+        "name": "Basic",
+        "description": "Standard CMS with WYSIWYG editor, user roles, and media management",
+        "scale": 1.3,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "blog",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "themes-light-dark",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "cms-professional",
+        "package_slug": "cms",
+        "name": "Professional",
+        "description": "Enterprise-grade CMS with custom content types, workflows, and advanced permissions",
+        "scale": 1.8,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "blog",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "custom-themes",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "multi-lang",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "resume-cv-starter",
+        "package_slug": "resume-cv",
+        "name": "Starter",
+        "description": "Simple online resume with basic information and downloadable PDF",
+        "scale": 0.7,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "resume-cv-basic",
+        "package_slug": "resume-cv",
+        "name": "Basic",
+        "description": "Interactive resume with portfolio section and contact form",
+        "scale": 0.9,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "themes-light-dark",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "resume-cv-professional",
+        "package_slug": "resume-cv",
+        "name": "Professional",
+        "description": "Advanced professional profile with analytics, blog integration, and custom domains",
+        "scale": 1.2,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "blog",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "custom-themes",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "performance-opt",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "company-starter",
+        "package_slug": "company",
+        "name": "Starter",
+        "description": "Basic company website with information pages and contact details",
+        "scale": 1.0,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "company-basic",
+        "package_slug": "company",
+        "name": "Basic",
+        "description": "Corporate website with services pages, team profiles, and client testimonials",
+        "scale": 1.3,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "blog",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "themes-light-dark",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "company-professional",
+        "package_slug": "company",
+        "name": "Professional",
+        "description": "Enterprise website with client portals, multilingual support, and advanced integrations",
+        "scale": 1.7,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "blog",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "custom-themes",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "multi-lang",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "email-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "restaurant-starter",
+        "package_slug": "restaurant",
+        "name": "Starter",
+        "description": "Simple restaurant website with menu and contact information",
+        "scale": 0.9,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": false,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "restaurant-basic",
+        "package_slug": "restaurant",
+        "name": "Basic",
+        "description": "Restaurant website with online reservations and gallery",
+        "scale": 1.2,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "review-rating-system",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "restaurant-professional",
+        "package_slug": "restaurant",
+        "name": "Professional",
+        "description": "Full restaurant management system with online ordering, delivery tracking, and loyalty program",
+        "scale": 1.6,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "review-rating-system",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "realtime-features",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "gym-starter",
+        "package_slug": "gym",
+        "name": "Starter",
+        "description": "Basic gym website with class schedules and membership information",
+        "scale": 0.9,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": false,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "gym-basic",
+        "package_slug": "gym",
+        "name": "Basic",
+        "description": "Fitness center website with online booking and trainer profiles",
+        "scale": 1.2,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "gym-professional",
+        "package_slug": "gym",
+        "name": "Professional",
+        "description": "Complete fitness management system with member portals, progress tracking, and mobile app",
+        "scale": 1.6,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "membership",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "realtime-features",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "hotel-booking-starter",
+        "package_slug": "hotel-booking",
+        "name": "Starter",
+        "description": "Simple hotel website with room information and contact form",
+        "scale": 1.1,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "hotel-booking-basic",
+        "package_slug": "hotel-booking",
+        "name": "Basic",
+        "description": "Hotel booking system with online reservations and basic management",
+        "scale": 1.4,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "hotel-booking-professional",
+        "package_slug": "hotel-booking",
+        "name": "Professional",
+        "description": "Complete hotel management system with channel manager, payment processing, and analytics",
+        "scale": 1.9,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "api",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "realtime-features",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "multi-lang",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "learning-platform-starter",
+        "package_slug": "learning-platform",
+        "name": "Starter",
+        "description": "Basic learning platform with course listings and simple content delivery",
+        "scale": 1.2,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "learning-platform-basic",
+        "package_slug": "learning-platform",
+        "name": "Basic",
+        "description": "Standard e-learning platform with quizzes, progress tracking, and certificates",
+        "scale": 1.5,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "membership",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "learning-platform-professional",
+        "package_slug": "learning-platform",
+        "name": "Professional",
+        "description": "Advanced learning management system with live classes, forums, and corporate training features",
+        "scale": 2.0,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "membership",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "realtime-features",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "multi-lang",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "api",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "performance-opt",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "car-rental-starter",
+        "package_slug": "car-rental",
+        "name": "Starter",
+        "description": "Basic car rental website with vehicle listings and contact information",
+        "scale": 1.1,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "car-rental-basic",
+        "package_slug": "car-rental",
+        "name": "Basic",
+        "description": "Car rental system with online booking and availability checking",
+        "scale": 1.4,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "car-rental-professional",
+        "package_slug": "car-rental",
+        "name": "Professional",
+        "description": "Complete fleet management system with GPS tracking, maintenance scheduling, and analytics",
+        "scale": 1.8,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "pay-gate",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "api",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "realtime-features",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "bulk-operations",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "clinic-starter",
+        "package_slug": "clinic",
+        "name": "Starter",
+        "description": "Simple clinic website with service information and contact details",
+        "scale": 1.0,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "clinic-basic",
+        "package_slug": "clinic",
+        "name": "Basic",
+        "description": "Medical clinic website with online appointment booking and doctor profiles",
+        "scale": 1.3,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "clinic-professional",
+        "package_slug": "clinic",
+        "name": "Professional",
+        "description": "Complete clinic management system with patient portals, EHR integration, and telemedicine",
+        "scale": 1.8,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "client-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "open-graph-images",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "social-media-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "index-google",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "api",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "realtime-features",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "sms-integration",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "inventory-management-starter",
+        "package_slug": "inventory-management",
+        "name": "Starter",
+        "description": "Basic inventory tracking system with simple stock management",
+        "scale": 1.2,
+        "features": [
+            {
+                "feature_slug": "landing-page",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "seo",
+                "is_required": false,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "inventory-management-basic",
+        "package_slug": "inventory-management",
+        "name": "Basic",
+        "description": "Standard inventory system with reporting and supplier management",
+        "scale": 1.5,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 3
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "bulk-operations",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    },
+    {
+        "slug": "inventory-management-professional",
+        "package_slug": "inventory-management",
+        "name": "Professional",
+        "description": "Enterprise inventory management with automation, integration, and predictive analytics",
+        "scale": 2.0,
+        "features": [
+            {
+                "feature_slug": "web-pages",
+                "is_required": true,
+                "amount": 10
+            },
+            {
+                "feature_slug": "responsive-web-app",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "user-based-auth",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-dashboard",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "admin-role-permission-based",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "notification-system-users",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "audit-logging",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "bulk-operations",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "project-backup",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "api",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "realtime-features",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "performance-opt",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "email-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "sms-integration",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "logging-monitoring",
+                "is_required": true,
+                "amount": 1
+            },
+            {
+                "feature_slug": "cicd",
+                "is_required": true,
+                "amount": 1
+            }
+        ]
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "title": "Personal",
+        "description": "A simple personal website portfolio for individuals, freelancers, or small businesses to showcase their work and contact information.",
+        "slug": "personal",
+        "cover_images": [
+            "personal-cover1.jpg",
+            "personal-cover2.jpg"
+        ],
+        "tags": [
+            "portfolio",
+            "simple",
+            "responsive",
+            "personal"
+        ],
+        "popularity": 85
+    },
+    {
+        "title": "E Commerce",
+        "description": "Complete online store solution with product management, shopping cart, payment processing, and order management.",
+        "slug": "e-commerce",
+        "cover_images": [
+            "ecommerce-cover1.jpg",
+            "ecommerce-cover2.jpg"
+        ],
+        "tags": [
+            "shopping",
+            "store",
+            "products",
+            "payments"
+        ],
+        "popularity": 95
+    },
+    {
+        "title": "CMS",
+        "description": "Custom content management system for dynamic websites with easy content updates and management capabilities.",
+        "slug": "cms",
+        "cover_images": [
+            "cms-cover1.jpg",
+            "cms-cover2.jpg"
+        ],
+        "tags": [
+            "content",
+            "management",
+            "dynamic",
+            "editable"
+        ],
+        "popularity": 80
+    },
+    {
+        "title": "Resume CV",
+        "description": "Professional online resume and curriculum vitae with interactive elements and downloadable PDF version.",
+        "slug": "resume-cv",
+        "cover_images": [
+            "resume-cover1.jpg",
+            "resume-cover2.jpg"
+        ],
+        "tags": [
+            "career",
+            "professional",
+            "job",
+            "profile"
+        ],
+        "popularity": 75
+    },
+    {
+        "title": "Company",
+        "description": "Corporate website for businesses with company information, services, team profiles, and contact details.",
+        "slug": "company",
+        "cover_images": [
+            "company-cover1.jpg",
+            "company-cover2.jpg"
+        ],
+        "tags": [
+            "corporate",
+            "business",
+            "services",
+            "enterprise"
+        ],
+        "popularity": 90
+    },
+    {
+        "title": "Restaurant",
+        "description": "Restaurant website with menu display, online reservations, food ordering, and gallery of dishes.",
+        "slug": "restaurant",
+        "cover_images": [
+            "restaurant-cover1.jpg",
+            "restaurant-cover2.jpg"
+        ],
+        "tags": [
+            "food",
+            "menu",
+            "reservation",
+            "dining"
+        ],
+        "popularity": 82
+    },
+    {
+        "title": "Gym",
+        "description": "Fitness center website with class schedules, membership plans, trainer profiles, and booking system.",
+        "slug": "gym",
+        "cover_images": [
+            "gym-cover1.jpg",
+            "gym-cover2.jpg"
+        ],
+        "tags": [
+            "fitness",
+            "workout",
+            "health",
+            "membership"
+        ],
+        "popularity": 78
+    },
+    {
+        "title": "Hotel Booking",
+        "description": "Hotel reservation system with room availability, booking management, payment processing, and admin dashboard.",
+        "slug": "hotel-booking",
+        "cover_images": [
+            "hotel-cover1.jpg",
+            "hotel-cover2.jpg"
+        ],
+        "tags": [
+            "accommodation",
+            "reservation",
+            "travel",
+            "booking"
+        ],
+        "popularity": 83
+    },
+    {
+        "title": "Learning Platform",
+        "description": "Online education platform with course management, video lessons, quizzes, and student progress tracking.",
+        "slug": "learning-platform",
+        "cover_images": [
+            "learning-cover1.jpg",
+            "learning-cover2.jpg"
+        ],
+        "tags": [
+            "education",
+            "courses",
+            "e-learning",
+            "training"
+        ],
+        "popularity": 87
+    },
+    {
+        "title": "Car Rental",
+        "description": "Car rental service website with vehicle inventory, booking system, pricing calculator, and fleet management.",
+        "slug": "car-rental",
+        "cover_images": [
+            "car-cover1.jpg",
+            "car-cover2.jpg"
+        ],
+        "tags": [
+            "vehicles",
+            "rental",
+            "automotive",
+            "booking"
+        ],
+        "popularity": 76
+    },
+    {
+        "title": "Clinic",
+        "description": "Medical clinic website with appointment scheduling, patient portal, doctor profiles, and service information.",
+        "slug": "clinic",
+        "cover_images": [
+            "clinic-cover1.jpg",
+            "clinic-cover2.jpg"
+        ],
+        "tags": [
+            "medical",
+            "healthcare",
+            "appointments",
+            "doctors"
+        ],
+        "popularity": 79
+    },
+    {
+        "title": "Inventory Management",
+        "description": "Inventory tracking system with stock management, reporting, supplier management, and order processing.",
+        "slug": "inventory-management",
+        "cover_images": [
+            "inventory-cover1.jpg",
+            "inventory-cover2.jpg"
+        ],
+        "tags": [
+            "stock",
+            "warehouse",
+            "logistics",
+            "management"
+        ],
+        "popularity": 81
+    }
+]

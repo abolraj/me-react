@@ -1,0 +1,317 @@
+[
+	{
+		"title": "Landing Page",
+		"description": "A single-page website designed to capture leads or promote a specific product/service.",
+		"story_points": 5,
+		"slug": "landing-page",
+		"popularity": 95
+	},
+	{
+		"title": "Web Pages",
+		"description": "Multiple informational pages with content management capabilities.",
+		"story_points": 3,
+		"slug": "web-pages",
+		"popularity": 90
+	},
+	{
+		"title": "Test Engineering",
+		"description": "Implementation of automated testing (unit, integration, E2E) for code reliability.",
+		"story_points": 8,
+		"slug": "test-eng",
+		"popularity": 75
+	},
+	{
+		"title": "Logging & Monitoring",
+		"description": "System logging, error tracking, and performance monitoring setup.",
+		"story_points": 6,
+		"slug": "logging-monitoring",
+		"popularity": 80
+	},
+	{
+		"title": "SSH Development Access",
+		"description": "Secure Shell access for development and deployment purposes.",
+		"story_points": 2,
+		"slug": "ssh-dev-method",
+		"popularity": 70
+	},
+	{
+		"title": "FTP Development Access",
+		"description": "File Transfer Protocol access for file management.",
+		"story_points": 1,
+		"slug": "ftp-dev-method",
+		"popularity": 60
+	},
+	{
+		"title": "SFTP Development Access",
+		"description": "Secure FTP access with encryption for file transfers.",
+		"story_points": 2,
+		"slug": "sftp-dev-method",
+		"popularity": 65
+	},
+	{
+		"title": "Light/Dark Theme",
+		"description": "Toggle between light and dark color schemes.",
+		"story_points": 4,
+		"slug": "themes-light-dark",
+		"popularity": 85
+	},
+	{
+		"title": "Custom Themes",
+		"description": "Fully customizable color schemes and styling options.",
+		"story_points": 7,
+		"slug": "custom-themes",
+		"popularity": 70
+	},
+	{
+		"title": "Google Site Registration",
+		"description": "Submit and index website on Google Search Console.",
+		"story_points": 1,
+		"slug": "index-google",
+		"popularity": 90
+	},
+	{
+		"title": "Open Graph Images",
+		"description": "Custom social media preview images for links shared on platforms.",
+		"story_points": 2,
+		"slug": "open-graph-images",
+		"popularity": 80
+	},
+	{
+		"title": "Server Setup",
+		"description": "Complete server configuration, deployment, and optimization.",
+		"story_points": 10,
+		"slug": "server-setup",
+		"popularity": 85
+	},
+	{
+		"title": "Support Ticket System",
+		"description": "Ticketing system for customer support and issue tracking.",
+		"story_points": 6,
+		"slug": "support-ticket",
+		"popularity": 75
+	},
+	{
+		"title": "Live Support",
+		"description": "Real-time chat support (chatbot or human agent).",
+		"story_points": 8,
+		"slug": "support-live",
+		"popularity": 70
+	},
+	{
+		"title": "Responsive Web Application",
+		"description": "Fully responsive design across all device sizes.",
+		"story_points": 5,
+		"slug": "responsive-web-app",
+		"popularity": 95
+	},
+	{
+		"title": "Payment Gateway",
+		"description": "Integration with payment processors (Stripe, PayPal, etc.).",
+		"story_points": 8,
+		"slug": "pay-gate",
+		"popularity": 85
+	},
+	{
+		"title": "Chatbot",
+		"description": "AI-powered or rule-based chatbot for customer interaction.",
+		"story_points": 7,
+		"slug": "chatbot",
+		"popularity": 75
+	},
+	{
+		"title": "Post-Deployment Support",
+		"description": "Developer support after project completion.",
+		"story_points": 0,
+		"slug": "dev-support",
+		"popularity": 80
+	},
+	{
+		"title": "Email Integration",
+		"description": "Email service integration for notifications and marketing.",
+		"story_points": 5,
+		"slug": "email-integration",
+		"popularity": 85
+	},
+	{
+		"title": "SMS Integration",
+		"description": "SMS service integration for notifications and alerts.",
+		"story_points": 4,
+		"slug": "sms-integration",
+		"popularity": 70
+	},
+	{
+		"title": "User Authentication",
+		"description": "Login, registration, and user session management.",
+		"story_points": 7,
+		"slug": "user-based-auth",
+		"popularity": 90
+	},
+	{
+		"title": "Client Dashboard",
+		"description": "Personalized dashboard for end-users/clients.",
+		"story_points": 8,
+		"slug": "client-dashboard",
+		"popularity": 80
+	},
+	{
+		"title": "Admin Dashboard",
+		"description": "Administrative interface for managing the platform.",
+		"story_points": 10,
+		"slug": "admin-dashboard",
+		"popularity": 90
+	},
+	{
+		"title": "Realtime Features",
+		"description": "Live updates, notifications, and real-time data sync.",
+		"story_points": 9,
+		"slug": "realtime-features",
+		"popularity": 75
+	},
+	{
+		"title": "SEO Optimization",
+		"description": "Search engine optimization for better visibility.",
+		"story_points": 6,
+		"slug": "seo",
+		"popularity": 85
+	},
+	{
+		"title": "CI/CD Pipeline",
+		"description": "Continuous Integration and Continuous Deployment setup.",
+		"story_points": 8,
+		"slug": "cicd",
+		"popularity": 70
+	},
+	{
+		"title": "Multi-language Support",
+		"description": "Support for multiple languages and localization.",
+		"story_points": 7,
+		"slug": "multi-lang",
+		"popularity": 75
+	},
+	{
+		"title": "Review & Rating System",
+		"description": "User reviews, ratings, comments, and likes.",
+		"story_points": 6,
+		"slug": "review-rating-system",
+		"popularity": 80
+	},
+	{
+		"title": "Blog System",
+		"description": "Content management system for blog posts.",
+		"story_points": 5,
+		"slug": "blog",
+		"popularity": 75
+	},
+	{
+		"title": "Social Media Integration",
+		"description": "Connectivity with social media platforms for sharing/login.",
+		"story_points": 4,
+		"slug": "social-media-integration",
+		"popularity": 85
+	},
+	{
+		"title": "Membership System",
+		"description": "Subscription-based access with renewal management.",
+		"story_points": 9,
+		"slug": "membership",
+		"popularity": 70
+	},
+	{
+		"title": "Affiliate System",
+		"description": "Referral and commission tracking for affiliates.",
+		"story_points": 10,
+		"slug": "affiliate-system",
+		"popularity": 65
+	},
+	{
+		"title": "API Development",
+		"description": "RESTful or GraphQL API for third-party integrations.",
+		"story_points": 8,
+		"slug": "api",
+		"popularity": 85
+	},
+	{
+		"title": "Single Page Application",
+		"description": "SPA architecture for smooth user experience.",
+		"story_points": 7,
+		"slug": "spa",
+		"popularity": 80
+	},
+	{
+		"title": "Progressive Web App",
+		"description": "PWA capabilities for offline access and app-like experience.",
+		"story_points": 9,
+		"slug": "pwa",
+		"popularity": 75
+	},
+	{
+		"title": "Audit Logging",
+		"description": "Detailed logs of user actions for security and compliance.",
+		"story_points": 5,
+		"slug": "audit-logging",
+		"popularity": 70
+	},
+	{
+		"title": "Bulk Operations",
+		"description": "Bulk import/export, editing, and processing capabilities.",
+		"story_points": 6,
+		"slug": "bulk-operations",
+		"popularity": 65
+	},
+	{
+		"title": "User Notification System",
+		"description": "In-app, email, and push notifications for users.",
+		"story_points": 5,
+		"slug": "notification-system-users",
+		"popularity": 80
+	},
+	{
+		"title": "Role-Based Access Control",
+		"description": "Admin roles and permission management system.",
+		"story_points": 7,
+		"slug": "admin-role-permission-based",
+		"popularity": 85
+	},
+	{
+		"title": "Shipping & Logistics",
+		"description": "Shipping calculations, tracking, and logistics management.",
+		"story_points": 9,
+		"slug": "shipping-logistics",
+		"popularity": 70
+	},
+	{
+		"title": "Performance Optimization",
+		"description": "Code and asset optimization for faster loading.",
+		"story_points": 6,
+		"slug": "performance-opt",
+		"popularity": 80
+	},
+	{
+		"title": "API Rate Limiting",
+		"description": "Request throttling and rate limiting for APIs.",
+		"story_points": 4,
+		"slug": "api-rate-throttling",
+		"popularity": 75
+	},
+	{
+		"title": "Project Backup System",
+		"description": "Automated backups and recovery procedures.",
+		"story_points": 5,
+		"slug": "project-backup",
+		"popularity": 85
+	},
+	{
+		"title": "SaaS Architecture",
+		"description": "Multi-tenant software-as-a-service architecture.",
+		"story_points": 12,
+		"slug": "saas",
+		"popularity": 70
+	},
+	{
+		"title": "Developer Experience",
+		"description": "Clean code, documentation, and maintainable architecture.",
+		"story_points": 0,
+		"slug": "developer-experience",
+		"popularity": 90
+	}
+]
