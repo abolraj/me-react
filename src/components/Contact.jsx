@@ -15,10 +15,8 @@ export default function Contact() {
 
         emailjs.sendForm('service_yra8r65', 'template_ofin9bc', form.current, 'eF37qRoSOqP5FTihC')
             .then((result) => {
-                console.log(result.text);
                 alert(t('contact.alerts.success')); // Use t() for success message
             }, (error) => {
-                console.log(error.text);
                 alert(t('contact.alerts.error')); // Use t() for error message
             });
     };
