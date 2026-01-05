@@ -3,11 +3,14 @@ import PixelCanvas from "@/components/PixelCanvas";
 import featuresService from "@/services/featureService"
 import packagesService from "@/services/packageService";
 import { Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react"
+import { useTranslation } from "react-i18next";
 
 export default function ServicesPage({
 
 }) {
+    const { t } = useTranslation();
     const { packages, isLoading, isError } = packagesService.useMostPopularPackages(5);
     const [canvasData, setCanvasData] = useState({ pixelsGap: '2px' });
     const canvasRef = useRef(null);
@@ -100,7 +103,8 @@ export default function ServicesPage({
 
             <Link to="/services/packages">
                 <button className="btn btn-secondary m-2 text-2xl p-2 lg:w-1/2">
-                    All Packages
+                    {t('common.all')}
+                    <ArrowRight className="size-4 rtl:-scale-x-100" />
                 </button>
             </Link>
         </section>
