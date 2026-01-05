@@ -13,7 +13,8 @@
             "responsive",
             "personal"
         ],
-        "popularity": 85
+        "popularity": 85,
+        "logo": "user"
     },
     {
         "title": "E Commerce",
@@ -29,7 +30,8 @@
             "products",
             "payments"
         ],
-        "popularity": 95
+        "popularity": 95,
+        "logo": "shopping-cart"
     },
     {
         "title": "CMS",
@@ -45,7 +47,8 @@
             "dynamic",
             "editable"
         ],
-        "popularity": 80
+        "popularity": 80,
+        "logo": "file-text"
     },
     {
         "title": "Resume CV",
@@ -61,7 +64,8 @@
             "job",
             "profile"
         ],
-        "popularity": 75
+        "popularity": 75,
+        "logo": "file-text"
     },
     {
         "title": "Company",
@@ -77,7 +81,8 @@
             "services",
             "enterprise"
         ],
-        "popularity": 90
+        "popularity": 90,
+        "logo": "building"
     },
     {
         "title": "Restaurant",
@@ -93,7 +98,8 @@
             "reservation",
             "dining"
         ],
-        "popularity": 82
+        "popularity": 82,
+        "logo": "utensils"
     },
     {
         "title": "Gym",
@@ -109,7 +115,8 @@
             "health",
             "membership"
         ],
-        "popularity": 78
+        "popularity": 78,
+        "logo": "dumbbell"
     },
     {
         "title": "Hotel Booking",
@@ -125,7 +132,8 @@
             "travel",
             "booking"
         ],
-        "popularity": 83
+        "popularity": 83,
+        "logo": "bed"
     },
     {
         "title": "Learning Platform",
@@ -141,7 +149,8 @@
             "e-learning",
             "training"
         ],
-        "popularity": 87
+        "popularity": 87,
+        "logo": "book-open"
     },
     {
         "title": "Car Rental",
@@ -157,7 +166,8 @@
             "automotive",
             "booking"
         ],
-        "popularity": 76
+        "popularity": 76,
+        "logo": "car"
     },
     {
         "title": "Clinic",
@@ -173,7 +183,8 @@
             "appointments",
             "doctors"
         ],
-        "popularity": 79
+        "popularity": 79,
+        "logo": "stethoscope"
     },
     {
         "title": "Inventory Management",
@@ -189,6 +200,7 @@
             "logistics",
             "management"
         ],
-        "popularity": 81
+        "popularity": 81,
+        "logo": "package"
     }
 ]
