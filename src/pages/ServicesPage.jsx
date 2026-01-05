@@ -1,18 +1,19 @@
+import Package from "@/components/Package";
 import PixelCanvas from "@/components/PixelCanvas";
 import featuresService from "@/services/featureService"
-import { CodeSquare } from "lucide-react";
+import packagesService from "@/services/packageService";
+import { Link } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react"
 
 export default function ServicesPage({
 
 }) {
-    const [canvasData, setCanvasData] = useState({ pixelsGap: '2px' })
+    const { packages, isLoading, isError } = packagesService.useMostPopularPackages(5);
+    const [canvasData, setCanvasData] = useState({ pixelsGap: '2px' });
     const canvasRef = useRef(null);
 
     const handleShowCustom = () => {
         if (canvasRef.current) {
-            // canvasRef.current.clearMatrix();
-            // canvasRef.current.resetCursor(0, 0);
 
             // Draw a smiley face
             const smiley = [
@@ -25,13 +26,14 @@ export default function ServicesPage({
             ];
             canvasRef.current.displayMatrix(1, 13, smiley);
 
+            // Draw a sinoide wave
             const sineWave3Cycles_6x40 = [
-                [0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0],
-                [0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0],
-                [0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0],
-                [0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0],
-                [1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0]
+                [0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
+                [0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+                [0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+                [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0]
             ];
 
             canvasRef.current.displayMatrix(10, 13, sineWave3Cycles_6x40);
@@ -76,18 +78,31 @@ export default function ServicesPage({
                 widthPixels={100}
                 heightPixels={20}
                 pixelsGap={canvasData.pixelsGap}
-                // pixelSize="10px"
                 modeOnClassName="bg-primary"
                 modeOffClassName="bg-base-300"
-                // onClickPixels={(x, y) => console.log('Clicked:', x, y)}
-                // onHoverPixels={(x,y, target)=> target.setAttribute('style',"background-color:white;")}
                 className="w-full [transform:translateZ(0)]"
-                // pixelClassName="rounded-none"
                 text={[
                     "You can ask it!",
                     "We can do it! :)"
                 ]}
             />
+
+            <div className="mt-4 flex gap-2 flex-wrap first:w-full [&>div:nth-child(n+2)]:w-1/3 *:grow">
+                {packages?.map((pack, i) => (
+                    <Package
+                        key={i}
+                        title={pack.title}
+                        description={pack.description}
+                        logo={pack.logo}
+                    />
+                ))}
+            </div>
+
+            <Link to="/services/packages">
+                <button className="btn btn-secondary m-2 text-2xl p-2 lg:w-1/2">
+                    All Packages
+                </button>
+            </Link>
         </section>
     );
 }
