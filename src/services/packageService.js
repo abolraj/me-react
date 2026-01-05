@@ -64,6 +64,24 @@ const packagesService = {
             isLoading,
             isError,
         }
+    },
+
+    useMostPopularPackages: (count = 3) => {
+        const { packages, isLoading, isError } = packagesService.usePackages()
+        let data = packages
+        if (data && count > 0) {
+            data.sort((a,b) => b.popularity - a.popularity)
+            data = data.slice(0, count)
+        }else{
+            data = []
+        }
+
+        return {
+            packages: data,
+            isLoading,
+            isError,
+        }
+
     }
 }
 
