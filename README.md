@@ -1,6 +1,6 @@
 ![Home](./screenshots/home.png)
 
-# My React Resume 💼
+# My React Resume 💼 
 
 Welcome to my personal resume project built with React! 🎨✨ This project showcases my skills, experiences, and portfolio in a beautifully designed, user-friendly interface.
 
