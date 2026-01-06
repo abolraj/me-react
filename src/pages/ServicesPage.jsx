@@ -90,7 +90,7 @@ export default function ServicesPage({
                 ]}
             />
 
-            <div className="mt-4 flex gap-2 flex-wrap first:w-full [&>div:nth-child(n+2)]:w-1/3 *:grow">
+            <div className="mt-4 flex gap-2 flex-wrap first:w-full md:[&>div:nth-child(n+2)]:w-1/3 *:grow">
                 {packages?.map((pack, i) => (
                     <Package
                         key={i}
@@ -101,12 +101,22 @@ export default function ServicesPage({
                 ))}
             </div>
 
-            <Link to="/services/packages">
-                <button className="btn btn-secondary m-2 text-2xl p-2 lg:w-1/2">
-                    {t('common.all')}
-                    <ArrowRight className="size-4 rtl:-scale-x-100" />
-                </button>
-            </Link>
+            <div className="w-full flex flex-wrap gap-2 mt-4">
+                <Link to="/services/packages" className="w-full lg:w-1/3 grow">
+                    <button className="btn btn-secondary text-2xl p-2 w-full">
+                        {t('common.all')} {t('services.packages')}
+                        <ArrowRight className="size-4 rtl:-scale-x-100" />
+                    </button>
+                </Link>
+
+                <Link to="/services/features" className="w-full lg:w-1/3 grow">
+                    <button className="btn btn-secondary text-2xl p-2 w-full">
+                        {t('common.all')} {t('services.features')}
+                        <ArrowRight className="size-4 rtl:-scale-x-100" />
+                    </button>
+                </Link>
+            </div>
+
         </section>
     );
 }
