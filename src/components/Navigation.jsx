@@ -28,7 +28,7 @@ export default function Navigation({ ...props }) {
         { icon: faBriefcase, label: t("navigation.experiences"), href: '/#experience' },
         { icon: faAward, label: t("navigation.certifications"), href: '/certifications' },
         { icon: faCodeBranch, label: t("navigation.portfolio"), href: '/portfolios' },
-        { icon: faDollarSign, label: t("navigation.pricing"), href: '/#pricing' },
+        { icon: faDollarSign, label: t("navigation.services"), href: '/services' },
         { icon: faStar, label: t("navigation.reviews"), href: '/reviews' },
         { icon: faAt, label: t("navigation.contact"), href: '/contact' },
     ];
