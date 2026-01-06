@@ -8,6 +8,9 @@ import { ServicesRoute } from './routes/ServicesRoute'
 import { ContactRoute } from './routes/ContactRoute'
 import { HomeRoute } from './routes/HomeRoute'
 import { MainLayoutRoute } from './routes/MainLayoutRoute'
+import { PackagesRoute } from './routes/PackagesRoute'
+import { PackageRoute } from './routes/PackageRoute'
+import { FeaturesRoute } from './routes/FeaturesRoute'
 
 const routeTree = RootRoute.addChildren([
     MainLayoutRoute.addChildren([
@@ -16,6 +19,9 @@ const routeTree = RootRoute.addChildren([
         ReviewsRoute,
         CertificationsRoute,
         ServicesRoute,
+        FeaturesRoute,
+        PackagesRoute,
+        PackageRoute,
         ContactRoute,
     ])
 ])
