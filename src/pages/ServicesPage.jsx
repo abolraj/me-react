@@ -3,7 +3,7 @@ import PixelCanvas from "@/components/PixelCanvas";
 import featuresService from "@/services/featureService"
 import packagesService from "@/services/packageService";
 import { Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CircleQuestionMark, Package as PackageIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react"
 import { useTranslation } from "react-i18next";
 
@@ -89,6 +89,20 @@ export default function ServicesPage({
                     "We can do it! :)"
                 ]}
             />
+
+            <h2 className="flex flex-wrap gap-2 justify-around items-center text-3xl md:text-5xl my-8 text-primary">
+                <div className="flex gap-2 justify-center items-center">
+                    <PackageIcon className="size-14" />
+                    {t('services.packages')}
+                </div>
+                <Link to="/services/strategy" className="flex gap-2 items-center group">
+                    <button className="btn btn-primary text-3xl md:text-5xl p-2 h-auto">
+                        {t('services.how_it_works')}
+                    </button>
+                    <CircleQuestionMark className="size-14"/>
+                    <ArrowRight className="size-14 group-hover:translate-x-4 transition-transform rtl:-scale-x-100" />
+                </Link>
+            </h2>
 
             <div className="mt-4 flex gap-2 flex-wrap first:w-full md:[&>div:nth-child(n+2)]:w-1/3 *:grow">
                 {packages?.map((pack, i) => (
