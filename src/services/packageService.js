@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import featuresService from './featureService'
+import packageItemsService from './packageItemService'
 
 
 const getPackages = () => {
@@ -43,7 +45,7 @@ const packagesService = {
         let packages = data
         if (packages && q) {
             q = q.toLowerCase().replaceAll(' ', '')
-            packages = packages.filter(f => {
+            packages = packages.filter(p => {
                 return p.title.toLowerCase().replaceAll(' ', '').includes(q) ||
                     p.description.toLowerCase().replaceAll(' ', '').includes(q)
             })
@@ -60,7 +62,31 @@ const packagesService = {
         const { packages, isLoading, isError } = packagesService.usePackages()
 
         return {
-            package: packages?.find(f => p.slug === slug) || null,
+            packageData: packages?.find(p => p.slug === slug) || null,
+            isLoading,
+            isError,
+        }
+    },
+
+    usePackageItems: (slug) => {
+        const { packageItems, isLoading, isError } = packageItemsService.usePackageItems()
+        const { features: featuresList } = featuresService.useFeatures()
+
+        let data = packageItems?.filter(pi => pi.package_slug === slug)
+        if (data && data.length > 0) {
+            for (let item of data) {
+                for (let feature of item.features) {
+                    const featureData = featuresList.find(f => f.slug === feature.feature_slug)
+                    feature.title = featureData.title
+                    feature.description = featureData.description
+                    feature.story_points = featureData.story_points
+                    feature.popularity = featureData.popularity
+                }
+            }
+        }
+
+        return {
+            packageItems: data || [],
             isLoading,
             isError,
         }
@@ -70,9 +96,9 @@ const packagesService = {
         const { packages, isLoading, isError } = packagesService.usePackages()
         let data = packages
         if (data && count > 0) {
-            data.sort((a,b) => b.popularity - a.popularity)
+            data.sort((a, b) => b.popularity - a.popularity)
             data = data.slice(0, count)
-        }else{
+        } else {
             data = []
         }
 
