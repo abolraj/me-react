@@ -2,6 +2,7 @@ export default {
     "common": {
         "scroll_down": "ُScroll Down",
         "all": "کل",
+        "search":"بحث",
     },
     "header": {
         "portfolios": "المحفظة",
@@ -355,7 +356,19 @@ export default {
                 "title": "الدعم ⭐⭐⭐⭐⭐",
                 "description": "أقدم دعمًا مجانيًا لمدة شهر لأي مشروع تم تطويره بواسطتي، مما يضمن التكامل السلس والأداء الأمثل. نجاحك هو التزامي."
             }
-        }
+        },
+        "starter_plan": "الخطة الأساسية",
+        "popular_plan": "الخطة الشائعة",
+        "premium_plan": "الخطة المميزة",
+        "popularity_score": "معدل الشعبية",
+        "story_points": "نقاط القصة",
+        "features": "المميزات",
+        "packages": "رزمات",
+        "sp": "نق",
+        "show_less": "عرض أقل",
+        "show_more_features": "عرض مميزات أكثر",
+        "select_plan": "اختر الخطة",
+        "footer_note": "جميع الخطط تتضمن دعم فني وتحديثات دورية"
     },
     "skills": {
         "title": "المهارات",

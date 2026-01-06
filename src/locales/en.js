@@ -2,6 +2,7 @@ export default {
     "common": {
         "scroll_down": "Scroll Down",
         "all": "All",
+        "search": "Search",
     },
     "header": {
         "portfolios": "Portfolios",
@@ -356,7 +357,19 @@ export default {
                 "title": "Support ⭐⭐⭐⭐⭐",
                 "description": "I provide one month of free support for any project developed by me, ensuring smooth integration and optimal performance. Your success is my commitment."
             }
-        }
+        },
+        "starter_plan": "Starter Plan",
+        "popular_plan": "Popular Plan",
+        "premium_plan": "Premium Plan",
+        "popularity_score": "Popularity Score",
+        "story_points": "Story Points",
+        "features": "Features",
+        "packages": "Packages",
+        "sp": "SP",
+        "show_less": "Show Less",
+        "show_more_features": "Show More Features",
+        "select_plan": "Select Plan",
+        "footer_note": "All plans include technical support and regular updates"
     },
     "skills": {
         "title": "Skills",
