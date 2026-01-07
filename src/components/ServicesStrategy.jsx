@@ -191,7 +191,7 @@ const ServicesStrategy = ({
                       <div className="flex-1">
                         <span className="font-medium text-base-content">{feature.title}</span>
                       </div>
-                      <div className="flex items-center gap-4 text-sm font-mono">
+                      <div className="flex items-center gap-4 text-sm font-mono" dir="ltr">
                         <span className="text-base-content/70">
                           {feature.amount} × {feature.story_points} SP
                         </span>
@@ -210,14 +210,14 @@ const ServicesStrategy = ({
                   <span className="font-semibold text-base-content">
                     {t('services.sum_of_features')}
                   </span>
-                  <span className="text-xl font-bold text-secondary">
+                  <span className="text-xl font-bold text-secondary" dir="ltr">
                     {calculation.sumBeforeScale} SP
                   </span>
                 </div>
               </div>
 
               {/* Scale Application */}
-              <div className="bg-base-100 rounded-lg p-2 md:p-4 border-2 border-accent/20">
+              <div className="bg-base-100 rounded-lg p-2 md:p-4 border-2 border-accent/20"  dir="ltr">
                 <div className="flex items-center justify-between mb-2">
                   <span className="font-semibold text-base-content">
                     {t('services.item_scale')}
@@ -238,7 +238,7 @@ const ServicesStrategy = ({
                     <div className="text-sm text-base-content/70 mb-1">
                       {t('services.final_story_points')}
                     </div>
-                    <div className="text-3xl font-bold text-primary">
+                    <div className="text-3xl font-bold text-primary"  dir="ltr">
                       {calculation.finalStoryPoints} SP
                     </div>
                   </div>
@@ -252,7 +252,7 @@ const ServicesStrategy = ({
                     </div>
                   </div>
                 </div>
-                <div className="text-xs text-base-content/60 font-mono text-center pt-4 border-t border-primary/20">
+                <div className="text-xs text-base-content/60 font-mono text-center pt-4 border-t border-primary/20" dir="ltr">
                   1 SP = ${baseStoryPointUSD}
                 </div>
               </div>
