@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import featuresService from './featureService'
 
 
 const getPackageItems = () => {
@@ -58,9 +59,21 @@ const packageItemsService = {
 
     usePackageItem: (slug) => {
         const { packageItems, isLoading, isError } = packageItemsService.usePackageItems()
+        const { features: featuresList } = featuresService.useFeatures()
+
+        let item = packageItems?.find(pi => pi.slug === slug) || null;
+        if (item) {
+            for (let feature of item.features) {
+                const featureData = featuresList.find(f => f.slug === feature.feature_slug)
+                feature.title = featureData.title
+                feature.description = featureData.description
+                feature.story_points = featureData.story_points
+                feature.popularity = featureData.popularity
+            }
+        }
 
         return {
-            packageItem: packageItems?.find(f => pi.slug === slug) || null,
+            packageItem: item,
             isLoading,
             isError,
         }
