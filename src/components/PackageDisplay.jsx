@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from '@tanstack/react-router';
+import { Link, useNavigate } from '@tanstack/react-router';
 import {
 	Check,
 	X,
@@ -160,16 +160,18 @@ export default function PackageDisplay({
 
 								{/* CTA Button */}
 								<div className="px-8 pb-8">
-									<button
-										onClick={() => onClickItem && onClickItem(item)}
-										className="w-full btn btn-primary group/btn relative overflow-hidden"
-									>
-										<span className="relative z-10 flex items-center justify-center gap-2">
-											{t('services.select_plan')}
-											<ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
-										</span>
-										<div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover/btn:opacity-100 transition-opacity"></div>
-									</button>
+									<Link to={'/services/calculator/' + item.slug}>
+										<button
+											onClick={() => onClickItem && onClickItem(item)}
+											className="w-full btn btn-primary group/btn relative overflow-hidden"
+										>
+											<span className="relative z-10 flex items-center justify-center gap-2">
+												{t('services.select_plan')}
+												<ArrowRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1" />
+											</span>
+											<div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary opacity-0 group-hover/btn:opacity-100 transition-opacity"></div>
+										</button>
+									</Link>
 								</div>
 
 								{/* Hover Glow Effect */}
