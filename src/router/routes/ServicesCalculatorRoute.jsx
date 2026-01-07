@@ -1,0 +1,7 @@
+import { createRoute } from '@tanstack/react-router'
+import { MainLayoutRoute } from './MainLayoutRoute' // Import the root route
+
+export const ServicesCalculatorRoute = createRoute({
+  getParentRoute: () => MainLayoutRoute, // This route is a child of the root
+  path: '/services/calculator/$itemSlug',
+}).lazy(() => import('./ServicesCalculatorRoute.lazy').then((d) => d.Route))
