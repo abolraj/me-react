@@ -2,7 +2,7 @@ export default {
     "common": {
         "scroll_down": "ُScroll Down",
         "all": "کل",
-        "search":"بحث",
+        "search": "بحث",
     },
     "header": {
         "portfolios": "المحفظة",
@@ -404,7 +404,15 @@ export default {
         "features": "الميزات",
         "package": "الحزمة",
         "feature": "الميزة",
-        "story_point": "نقطة القصة"
+        "story_point": "نقطة القصة",
+        "calculator": "آلة حاسبة",
+        "years_exp_of_dev": "سنوات خبرة التطوير",
+        "expriences": "الخبرات",
+        "time_est": "تقدير الوقت",
+        "days": "أيام",
+        "months": "أشهر",
+        "years": "سنن",
+        "formula_est_time": "سنوات الخبرة × 6 (رقم ثابت) = الحد الأدنى الإجمالي لنقاط القصة في الشهر"
     },
     "skills": {
         "title": "المهارات",

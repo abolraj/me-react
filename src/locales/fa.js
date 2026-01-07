@@ -405,7 +405,15 @@ export default {
         "features": "ویژگی‌ها",
         "package": "بسته",
         "feature": "ویژگی",
-        "story_point": "استوری پوینت"
+        "story_point": "استوری پوینت",
+        "calculator": "ماشین حساب",
+        "years_exp_of_dev": "سال‌ تجربه توسعه",
+        "expriences": "تجربیات",
+        "time_est": "تخمین زمان",
+        "days": "روز",
+        "months": "ماه",
+        "years": "سال",
+        "formula_est_time": "سال‌های تجربه × 6 (یک عدد ثابت) = حداقل مجموع استوری پوینت در ماه"
     },
     "skills": {
         "title": "مهارت‌ها",

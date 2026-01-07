@@ -414,7 +414,15 @@ export default {
         "item": "Item",
         "example_calculation": "Example Calculation",
         "no_item_selected": "No item selected",
-        "no_package_selected": "No package selected"
+        "no_package_selected": "No package selected",
+        "calculator": "Calculator",
+        "years_exp_of_dev":"Years Expriences Of Development",
+        "expriences":"Expriences",
+        "time_est":"Time Estimation",
+        "days": "Days",
+        "months": "Months",
+        "years": "Years",
+        "formula_est_time": "Expriences Years × 6 (A constant number) = Minimum total story points per month",
     },
     "skills": {
         "title": "Skills",
