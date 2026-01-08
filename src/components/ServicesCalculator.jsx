@@ -1,4 +1,5 @@
-import { Calculator, CheckCircle2, ChevronRight, DollarSign, Minus, Package, Plus, Sparkles, Timer } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { ArrowRight, Calculator, Calendar, CheckCircle2, ChevronRight, DollarSign, Eye, Minus, Package, Plus, Sparkles, Timer } from "lucide-react";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -26,7 +27,7 @@ export default function ServicesCalculator({
         const sumBeforeScale = featureCalculations.reduce((sum, calc) => sum + calc.subtotal, 0);
         const finalStoryPoints = Math.round(sumBeforeScale * itemData.scale);
         const estimatedCost = finalStoryPoints * baseStoryPointUSD;
-        const estimatedTime = parseInt((finalStoryPoints / (yearsExp * 5.5)) * 30)
+        const estimatedTime = parseInt((finalStoryPoints / (yearsExp * 6)) * 30)
 
         return {
             featureCalculations,
@@ -269,6 +270,106 @@ export default function ServicesCalculator({
                 </div>
 
             </div>
+
+            {/* Section 5: Final Summary */}
+            <section className="mt-4 bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-2xl p-2 md:p-4 border-2 border-primary">
+                <div className="flex items-center gap-3 mb-6">
+                    <div className="p-2 bg-primary/20 rounded-lg">
+                        <Eye className="w-5 h-5 text-primary" />
+                    </div>
+                    <h2 className="text-2xl font-bold text-base-content">
+                        {t('services.final_summary')}
+                    </h2>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="bg-base-100 rounded-xl p-2 md:p-4 border border-base-300">
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="p-2 bg-success/10 rounded-lg">
+                                <DollarSign className="w-5 h-5 text-success" />
+                            </div>
+                            <h3 className="text-xl font-bold text-base-content">
+                                {t('services.cost_summary')}
+                            </h3>
+                        </div>
+                        <div className="space-y-3">
+                            <div className="flex justify-between items-center">
+                                <span className="text-base-content/70">
+                                    {t('services.story_points')}
+                                </span>
+                                <span className="font-mono font-bold">
+                                    {calculation.finalStoryPoints} SP
+                                </span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span className="text-base-content/70">
+                                    {t('services.rate_per_sp')}
+                                </span>
+                                <span className="font-mono">
+                                    ${baseStoryPointUSD}/SP
+                                </span>
+                            </div>
+                            <div className="pt-3 border-t border-base-300">
+                                <div className="flex justify-between items-center">
+                                    <span className="text-lg font-bold text-base-content">
+                                        {t('services.total_estimated_cost')}
+                                    </span>
+                                    <span className="text-3xl font-bold text-success flex items-center gap-1">
+                                        <DollarSign className="w-6 h-6" />
+                                        {calculation.estimatedCost.toLocaleString()}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="bg-base-100 rounded-xl p-2 md:p-4 border border-base-300">
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="p-2 bg-info/10 rounded-lg">
+                                <Calendar className="w-5 h-5 text-info" />
+                            </div>
+                            <h3 className="text-xl font-bold text-base-content">
+                                {t('services.timeline_summary')}
+                            </h3>
+                        </div>
+                        <div className="space-y-3">
+                            <div className="flex justify-between items-center">
+                                <span className="text-base-content/70">
+                                    {t('services.estimated_duration')}
+                                </span>
+                                <span className="font-mono font-bold">
+                                    {calculation.estimatedTime} {t('services.days')}
+                                </span>
+                            </div>
+                            <div className="flex justify-between items-center">
+                                <span className="text-base-content/70">
+                                    {t('services.approx_months')}
+                                </span>
+                                <span className="font-mono">
+                                    {Math.round(calculation.estimatedTime / 30)} {t('services.months')}
+                                </span>
+                            </div>
+                            <div className="pt-3 border-t border-base-300">
+                                <div className="text-sm text-base-content/60">
+                                    {t('services.timeline_note')}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <Link
+                to={"/services/contract/" + itemData.slug}
+                search={{exp: yearsExp}}
+                className="w-full lg:w-1/3 grow"
+            >
+                <button className="mt-4 btn btn-secondary text-2xl p-2 w-full">
+                    {t('services.make_contract')}
+                    <ArrowRight className="size-4 rtl:-scale-x-100" />
+                </button>
+            </Link>
+
         </div>
     )
 }
