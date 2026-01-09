@@ -26,7 +26,6 @@ export default function HomePage({
             <Experiences></Experiences>
             <LatestCertifications></LatestCertifications>
             <LatestPortfolios></LatestPortfolios>
-            <Pricing></Pricing>
             <Reviews></Reviews>
             <AbolScrollbar></AbolScrollbar>
         </>
