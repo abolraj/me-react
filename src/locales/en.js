@@ -347,15 +347,15 @@ export default {
         "title": "What I Do as a Fullstack Developer 🔥🔥🔥",
         "items": {
             "frontend": {
-                "title": "Frontend Web Development ⭐⭐⭐",
+                "title": "Frontend Web Development",
                 "description": "With extensive hands-on experience, I design and develop responsive, interactive front-end interfaces using ReactJS, TailwindCSS, and JavaScript. Let's transform your vision into a stunning reality."
             },
             "backend": {
-                "title": "Backend Web Development ⭐⭐⭐⭐⭐",
+                "title": "Backend Web Development",
                 "description": "Specializing in backend development with PHP, Laravel, and WordPress, I build robust server-side applications. From customizing plugins and themes to developing APIs, I ensure your server-side applications are efficient and scalable."
             },
             "support": {
-                "title": "Support ⭐⭐⭐⭐⭐",
+                "title": "Support",
                 "description": "I provide one month of free support for any project developed by me, ensuring smooth integration and optimal performance. Your success is my commitment."
             }
         },
@@ -470,7 +470,8 @@ export default {
         "item_details": "Item Details",
         "total_story_points": "Total Story Points",
         "contract_terms_and_conditions_note": "Note: This is an estimated contract. Final terms and conditions will be confirmed upon project agreement. All calculations are based on the provided parameters and may vary during actual implementation.",
-        "make_contract": "Make Contract"
+        "make_contract": "Make Contract",
+        "wanna_look_for_services": "Wanna look for services ?",
     },
     "skills": {
         "title": "Skills",
