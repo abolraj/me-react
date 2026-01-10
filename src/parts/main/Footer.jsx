@@ -8,22 +8,22 @@ export default function Footer({ ...props }) {
     const navs = [
         {
             label: t('footer.services'),
-            href: '#',
+            href: '/services',
             subnavs: [
-                { label: t('footer.fullstack_web_development'), href: '#' },
-                { label: t('footer.backend_web_development'), href: '#' },
-                { label: t('footer.frontend_web_development'), href: '#' },
-                { label: t('footer.chatbot_development'), href: '#' },
+                { label: t('footer.fullstack_web_development'), href: '/services' },
+                { label: t('footer.backend_web_development'), href: '/services' },
+                { label: t('footer.frontend_web_development'), href: '/services' },
+                { label: t('footer.chatbot_development'), href: '/services' },
             ],
         },
         {
             label: t('footer.certifications'),
-            href: '#',
+            href: '/certifications',
             subnavs: [
-                { label: t('footer.laravel_cert'), href: '#' },
-                { label: t('footer.react_cert'), href: '#' },
-                { label: t('footer.php_cert'), href: '#' },
-                { label: t('footer.db_cert'), href: '#' },
+                { label: t('footer.laravel_cert'), href: '/certifications' },
+                { label: t('footer.react_cert'), href: '/certifications' },
+                { label: t('footer.php_cert'), href: '/certifications' },
+                { label: t('footer.db_cert'), href: '/certifications' },
             ],
         },
         {
