@@ -111,6 +111,7 @@ export default function ServicesPage({
                         title={pack.title}
                         description={pack.description}
                         logo={pack.logo}
+                        slug={pack.slug}
                     />
                 ))}
             </div>
