@@ -1,8 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Quicksand:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Quicksand:wght@500&display=swap'); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lalezar';
+  src: url('./assets/fonts/Lalezar/Lalezar-Regular.ttf') format('truetype');
+}
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
