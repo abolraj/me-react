@@ -62,8 +62,8 @@ export default function Services({ ...props }) {
                                     {service.description}
                                 </p>
                                 <div className="absolute flex gap-1 text-yellow-400 right-2 bottom-2">
-                                    {[0, 0, 0, 0, 0].slice(0, service.stars).map(() => (
-                                        <Star className="size-6 text-yellow-300 fill-current" />
+                                    {[0, 0, 0, 0, 0].slice(0, service.stars).map((s,i) => (
+                                        <Star className="size-6 text-yellow-300 fill-current" key={i}/>
                                     ))}
                                 </div>
                             </div>
