@@ -46,15 +46,15 @@ export default function Footer({ ...props }) {
             </div>
             <div className='grow sm:rtl:-order-1'>
                 <ul className='flex flex-wrap gap-4 text-start justify-between'>
-                    {navs.map(nav => (
-                        <li className={`${nav?.subnavs && 'max-sm:w-full'}`}>
+                    {navs.map((nav, i) => (
+                        <li className={`${nav?.subnavs && 'max-sm:w-full'}`} key={i}>
                             <h2 className='text-xl'>
                                 <a href={nav.href} className='link link-hover text-base-content'>{nav.label}</a>
                             </h2>
                             {nav?.subnavs && (
                                 <ul className='flex flex-col  border-s-2 border-s-base-content ps-2'>
-                                    {nav.subnavs.map(subnav => (
-                                        <li>
+                                    {nav.subnavs.map((subnav, ii) => (
+                                        <li key={ii}>
                                             <h3 className='text-lg'>
                                                 <a className='link link-hover text-base-content' href={subnav.href}>
                                                     {subnav.label}
