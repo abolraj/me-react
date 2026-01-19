@@ -44,10 +44,10 @@ export default function Services({ ...props }) {
                         </h2>
                     </div>
                     {services.map((service, index) => (
-                        <div key={index} className={"w-1/4 grow bg-base-100 p-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-accent/30 group relative overflow-hidden "}>
+                        <div key={index} className="md:w-1/4 grow bg-base-100 p-0 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-base-300 hover:border-accent/30 group relative overflow-hidden ">
                             <div className="absolute z-[99] inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
 
-                            <div className="shadow-xl bg-base-100 text-base-content rounded-lg p-6 h-full" data-aos="fade-up" data-aos-duration="800" data-aos-delay={300 + index * 200}>
+                            <div className="shadow-xl bg-base-100 text-base-content rounded-lg p-6 pb-8 h-full" data-aos="fade-up" data-aos-duration="800" data-aos-delay={300 + index * 200}>
                                 <div className="text-start flex gap-2 items-center">
                                     <div className="text-primary mt-1 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                                         {<service.icon />}
@@ -74,7 +74,7 @@ export default function Services({ ...props }) {
 
                 <div className="text-base-content mt-2">
                     <Link to="/services" className="w-full lg:w-1/3 grow">
-                        <button className="btn btn-primary text-2xl p-2 w-full">
+                        <button className="btn btn-primary h-auto text-2xl p-2 w-full">
                             {t('services.wanna_look_for_services')}
                             <ArrowRight className="size-6 rtl:-scale-x-100" />
                         </button>
