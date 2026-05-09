@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 export default function Information({ ...props }) {
-    const { t } = useTranslation(); // Initialize the t() function
+    const { t, i18n } = useTranslation(); // Initialize the t() function
 
     return (
         <section className="about pt-12 lg:pt-24" id="about">
@@ -36,7 +36,7 @@ export default function Information({ ...props }) {
                                     </span>
                                 ))}
                             </div>
-                            <a href="resume.pdf">
+                            <a href={`Abolfazl_Rajaeenasab_CV_${i18n.language === 'fa' ? 'fa' : 'en'}.pdf`}>
                                 <button className="btn btn-primary w-full md:w-auto" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                                     {t("information.download_button")}
                                     <FontAwesomeIcon icon={faDownload} />

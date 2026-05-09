@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import heroImg from "@assets/hero.png";
 
 export default function Hero() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
     const [isVisible, setIsVisible] = useState(false);
 
@@ -152,7 +152,7 @@ export default function Hero() {
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 pt-4 justify-center lg:justify-start">
-                            <a href='resume.pdf' className="px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-primary to-secondary text-primary-content rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
+                            <a href={`Abolfazl_Rajaeenasab_CV_${i18n.language === 'fa' ? 'fa' : 'en'}.pdf`} className="px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-primary to-secondary text-primary-content rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all hover:scale-105 flex items-center justify-center gap-2 text-sm sm:text-base">
                                 <Download className="w-4 h-4 sm:w-5 sm:h-5" />
                                 {t("information.download_button")}
                             </a>
