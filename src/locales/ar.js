@@ -492,7 +492,7 @@ export default {
         ]
     },
     "footer": {
-        "text": "2025 ©️ تم التطوير والتصميم ب ❤️ بواسطتي",
+        "text": "{{year}} ©️ تم التطوير والتصميم ب ❤️ بواسطتي",
         "services": "الخدمات",
         "fullstack_web_development": "تطوير ويب كامل",
         "backend_web_development": "تطوير الواجهة الخلفية",

@@ -493,7 +493,7 @@ export default {
         ]
     },
     "footer": {
-        "text": "2025 ©️ توسعه و طراحی شده با ❤️ توسط من",
+        "text": "{{year}} ©️ توسعه و طراحی شده با ❤️ توسط من",
         "services": "خدمات",
         "fullstack_web_development": "توسعه وب فول‌استک",
         "backend_web_development": "توسعه بک‌اند وب",

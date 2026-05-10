@@ -502,7 +502,7 @@ export default {
         ]
     },
     "footer": {
-        "text": "2025 ©️ Developed and designed with ❤️ by me",
+        "text": "{{year}} ©️ Developed and designed with ❤️ by me",
         "services": "Services",
         "fullstack_web_development": "Full-stack web development",
         "backend_web_development": "Back-end web development",
