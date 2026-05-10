@@ -72,7 +72,7 @@ export default function Footer({ ...props }) {
             {/* Copyright */}
             <div className='w-full mt-10'>
                 <p className="text-lg text-base-content">
-                    {t('footer.text')}
+                    {t('footer.text', {year: (new Date()).getFullYear()})}
                 </p>
             </div>
         </footer>
