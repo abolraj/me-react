@@ -14,6 +14,24 @@
   src: url('./assets/fonts/Lalezar/Lalezar-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: Mikhak;
+  src: url(./assets/fonts/Mikhak/Mikhak-Bold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Mikhak;
+  src: url(./assets/fonts/Mikhak/Mikhak-Medium.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Mikhak;
+  src: url(./assets/fonts/Mikhak/Mikhak-Light.ttf);
+  font-weight: 200;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
