@@ -1,1 +1,0 @@
-(function(){let e=[];self.onmessage=t=>{let{type:n,payload:r}=t.data;if(n===`INIT`&&(e=r.icons,self.postMessage({type:`READY`,payload:e})),n===`SEARCH`){let t=r.query.trim().toLowerCase();if(!t){self.postMessage({type:`RESULTS`,payload:e});return}let n=[];for(let r of e)r.toLowerCase().includes(t)&&n.push(r);self.postMessage({type:`RESULTS`,payload:n})}}})();
