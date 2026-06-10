@@ -37,5 +37,5 @@ export const router = createRouter({
     routeTree,
     notFoundMode: 'root',
     scrollRestoration: true,
-    basepath: 'me-react',
+    // basepath: 'me-react',
 })
